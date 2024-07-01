@@ -1,0 +1,11 @@
+
+####live server
+#User-agent: *
+#Disallow: /signature-images
+#User-agent: *
+#allow: /
+Sitemap: https://www.nautilusshipping.com/sitemap.xml
+
+
+
+

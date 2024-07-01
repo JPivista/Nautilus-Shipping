@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){"use strict";var duration=parseInt(spacexchimp_p008_scriptParams["scroll_duration"]);$('#ssttbutton').hide();$(window).scroll(function(){if($(this).scrollTop()<200){$('#ssttbutton').fadeOut();}else{$('#ssttbutton').fadeIn();}});$('#ssttbutton').on('click',function(){$('html, body').animate({scrollTop:0},duration);return false;});});

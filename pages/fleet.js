@@ -68,7 +68,7 @@ const approach = () => {
         <p className="fs-6">At Nautilus, we endeavor to adhere to the highest industry standards and in compliance with the requisite rules and regulations. We do this by following a comprehensive maintenance program that includes both planned maintenance and regular inspections. We understand the importance of periodic inspections and are supported by our marine and technical superintendents’ experience with port state control inspections, flag state, and coast guard inspection authorities.</p>
         <p className="fs-6">A strong focus on periodic and proactive maintenance programs ensures that potential damage from or to cargo is minimized and our vessels are always in optimal condition. Our strict adherence to schedule and efficient operations means your vessels have minimal downtime. More importantly, this approach has helped in asset preservation, cost, and operational efficiency, which in turn translates into maximum revenue days.</p>
         <Image src="/images/fleet_1.jpeg" className="mt-4 m-width" width="800" height="500" alt="nautilus shipping" />
-        <h3 className="fs-2 pt-4 heading">Managing a range of ships with a strong business ethic</h3>
+        <h3 className="fs-2 pt-4 heading">Managing a range of ships with a strong business ethics</h3>
         <div className="offer fs-6">We have experience in managing a range of ships including bulk carriers, general cargo vessels, containers, chemical tankers, offshore vessels and barges, dredgers (cutter and hopper suction).</div>
         <div className="offer fs-6 mb-4">We manage tankers in adherence to SIRE standards.</div>
         <Image src="/images/fleet_2.jpeg" className="mt-4 mb-4 m-width" width="800" height="500" alt="nautilus shipping" />

@@ -177,8 +177,8 @@ const approach = () => {
               <Col className="fs-6 self">Dynamic management of War Risk</Col>
             </Row>
           </Col>
-        </Row>
-        <Row className="">
+          {/* </Row>
+        <Row className=""> */}
           <Col xs={12} lg={6}>
             <Row className='d-flex'>
               <Col xs={2} lg={2} className="self"><Image src="/images/svg_1.svg" className="icons" alt="Nautilus Shipping" width="60" height="60" /></Col>

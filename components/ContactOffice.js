@@ -16,7 +16,7 @@ const ContactOffice = () => {
                   Maalavika Centre, 144,<br />Kodambakkam High Road, Nungambakkam,<br />Chennai-600 034
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pr-4"></i>   +91 44 4684 9999</Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>  <p className='merriweather mb-0' style={{ fontSize: '20px' }}> +91 44 4684 9999</p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -29,7 +29,7 @@ const ContactOffice = () => {
                   4th Floor, 16 & 16/1, <br />Museum Road, <br />Bengaluru – 560025
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pr-4"></i> +91 80 41966600</Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0 ' style={{ fontSize: '20px' }}>+91 80 41966600</p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -43,7 +43,7 @@ const ContactOffice = () => {
                   Dubai, UAE
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pr-4"></i>+971 42569259</Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i><p className='merriweather mb-0' style={{ fontSize: '20px' }}>+971 4 2569259</p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -55,7 +55,7 @@ const ContactOffice = () => {
                   607, Signature Business Park,<br />Postal Colony Road, Chembur,<br />Mumbai-400 071
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pr-4"></i> +91 22 2550 8970</Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0' style={{ fontSize: '20px' }}>+91 22 2550 8970</p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -69,7 +69,7 @@ const ContactOffice = () => {
                   South Andaman – 744103
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pr-4"></i> +91 99320 88859</Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0' style={{ fontSize: '20px' }}>+91 99320 88859</p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -100,7 +100,7 @@ const ContactOffice = () => {
                   Giri Nagar,<br />Cochin – 682020
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pr-4"></i> +91 484 4042325</Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0' style={{ fontSize: '20px !important' }}>+91 484 4042325</p></Card.Title>
               </Card.Body>
             </Card>
           </Col>

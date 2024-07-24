@@ -20,11 +20,16 @@ const ContactOffice = () => {
                 <Card.Title className="off-phone d-flex align-items-center card-titles">
 
                   <i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
-                  <p className='merriweather mb-0' style={{ fontSize: '20px !important' }}>
-                    <Link href="tel:+91 44 4684 9999" target='_blank' className='text-decoration-none text-white'> +91 44 4684 9999
+                  {/* <p className='merriweather mb-0' >
+                    <Link href="tel:+91 44 4684 9999" target='_blank' className='text-decoration-none text-white' style={{ fontSize: '20px !important' }}>
+                      +91 44 4684 9999
+                    </Link>
+                  </p> */}
+                  <p className='merriweather mb-0 ' style={{ fontSize: '20px' }}>
+                    <Link href="tel:+914446849999" target='_blank' className='text-decoration-none text-white'>
+                      +91 44 4684 9999
                     </Link>
                   </p>
-
                 </Card.Title>
               </Card.Body>
             </Card>
@@ -43,7 +48,8 @@ const ContactOffice = () => {
                     <Link href="tel:+91 80 4196 6600" target='_blank' className='text-decoration-none text-white'>
                       +91 80 4196 6600
                     </Link>
-                  </p></Card.Title>
+                  </p>
+                </Card.Title>
               </Card.Body>
             </Card>
           </Col>

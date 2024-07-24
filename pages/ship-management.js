@@ -200,7 +200,7 @@ const approach = () => {
         <Container className=" text-box">
           <h1 className="heading-1 pt-5 ">Our Ship Management services</h1>
           <Row className="pt-5 pb-5">
-            <Col xs={6} sm={3} className="mt-45 mt-46">
+            <Col xs={6} sm={3} className="mt-45 d-flex flex-column justify-content-end">
               <h3 className="m-heading fs-5">Inspection</h3>
               <Link href="/inspection" >
                 <Button className="s_btn"> GO<Image src="/images/arrow.svg" width="100" height="50" className="icon-arrow" alt="Nautilus Shipping" /></Button>

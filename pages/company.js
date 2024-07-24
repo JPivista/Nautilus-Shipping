@@ -38,7 +38,7 @@ const approach = () => {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -59,7 +59,7 @@ const approach = () => {
       <Container className="text-box">
         <Container className="grad-color">
           <h1 className="mb-4 fs-5 text-white">Profile</h1>
-          <p className="fs-6 mt-4 text-white">Nautilus Shipping is a fast-growing provider of maritime solutions. We have over 15 years of experience and six strategically located offices. We strive to deliver excellence across Ship Management, Crewing, Ship Agency, Ship Broking, Vessel Inspections, Surveys and, Commercial Vessel Management services.</p>
+          <p className="fs-6 mt-4 text-white">Nautilus Shipping is a fast-growing provider of maritime solutions. We have over 17 years of experience and six strategically located offices. We strive to deliver excellence across Ship Management, Crewing, Ship Broking, Vessel Inspections, Surveys and, Commercial Vessel Management services.</p>
 
         </Container>
         <h1 className="mb-4 mt-5 fs-5">Specifically, we offer:</h1>

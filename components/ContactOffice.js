@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { Container, Row, Col, Card, Image, Button } from 'react-bootstrap';
 
@@ -16,7 +17,15 @@ const ContactOffice = () => {
                   Maalavika Centre, 144,<br />Kodambakkam High Road, Nungambakkam,<br />Chennai-600 034
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>  <p className='merriweather mb-0' style={{ fontSize: '20px' }}> +91 44 4684 9999</p></Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles">
+
+                  <i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
+                  <p className='merriweather mb-0' style={{ fontSize: '20px !important' }}>
+                    <Link href="tel:+91 44 4684 9999" target='_blank' className='text-decoration-none text-white'> +91 44 4684 9999
+                    </Link>
+                  </p>
+
+                </Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -29,7 +38,12 @@ const ContactOffice = () => {
                   4th Floor, 16 & 16/1, <br />Museum Road, <br />Bengaluru – 560025
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0 ' style={{ fontSize: '20px' }}>+91 80 41966600</p></Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
+                  <p className='merriweather mb-0 ' style={{ fontSize: '20px' }}>
+                    <Link href="tel:+91 80 4196 6600" target='_blank' className='text-decoration-none text-white'>
+                      +91 80 4196 6600
+                    </Link>
+                  </p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -43,7 +57,13 @@ const ContactOffice = () => {
                   Dubai, UAE
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i><p className='merriweather mb-0' style={{ fontSize: '20px' }}>+971 4 2569259</p></Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles">
+                  <i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
+                  <p className='merriweather mb-0' style={{ fontSize: '20px' }}>
+                    <Link href="tel:+971 4 2569259" target='_blank' className='text-decoration-none text-white'>
+                      +971 4 2569259
+                    </Link>
+                  </p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -55,7 +75,11 @@ const ContactOffice = () => {
                   607, Signature Business Park,<br />Postal Colony Road, Chembur,<br />Mumbai-400 071
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0' style={{ fontSize: '20px' }}>+91 22 2550 8970</p></Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
+                  <p className='merriweather mb-0' style={{ fontSize: '20px' }}>
+                    <Link href="tel:+91 22 2550 8970" target='_blank' className='text-decoration-none text-white'>
+                      +91 22 2550 8970
+                    </Link></p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -69,7 +93,12 @@ const ContactOffice = () => {
                   South Andaman – 744103
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0' style={{ fontSize: '20px' }}>+91 99320 88859</p></Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
+                  <p className='merriweather mb-0' style={{ fontSize: '20px' }}>
+                    <Link href="tel:+91 99 3208 8859" target='_blank' className='text-decoration-none text-white'>
+                      +91 99 3208 8859
+                    </Link>
+                  </p></Card.Title>
               </Card.Body>
             </Card>
           </Col>
@@ -83,13 +112,19 @@ const ContactOffice = () => {
                   Singapore-069533
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0' style={{ fontSize: '20px' }}>+65 62246151</p></Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles">
+                  <i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
+                  <p className='merriweather mb-0' style={{ fontSize: '20px' }}>
+                    <Link href="tel:+65 6224 6151" target='_blank' className='text-decoration-none text-white'>
+                      +65 6224 6151
+                    </Link>
+                  </p>
+                </Card.Title>
               </Card.Body>
             </Card>
           </Col>
         </Row>
-        <Row className="mt-4 pb-4">
-
+        {/* <Row className="mt-4 pb-4">
           <Col sm={12} lg={4} className="pt-4">
             <Card>
               <Card.Header className="c-head">Kochi</Card.Header>
@@ -104,7 +139,7 @@ const ContactOffice = () => {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
 
       </Container>
 

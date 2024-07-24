@@ -68,8 +68,8 @@ li a{
 }
 .scroll-to-top {
     background-color: #027B9F !important;
-    right: 30px !important;
-    bottom: 178px !important;
+    right: 28px !important;
+    bottom: 100px !important;
     position: fixed;
     z-index: 2;
     cursor: pointer;

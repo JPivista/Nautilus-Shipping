@@ -33,60 +33,72 @@ function NavScrollExample() {
     // 👇️ or simply set it to true
     // setIsShown(true);
   };
-  
+
   return (
     <>
-    <Navbar  expand="lg" className="wbg-main" >
-      <Container>
-        <Link href="/"><Image src="/images/logo.svg" className="logo" width="100" height="80" alt="nautilus shipping"/></Link>
-        
-        <Navbar.Toggle aria-controls="navbarScroll" onClick={handleShow}/>
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Link href="/our-approach" className="nav-link ">Our Approach</Link>
-            <NavDropdown title="Services" id="navbarScrollingDropdowns">
-              <NavDropdown.Item ><Link href="/ship-management" className="menu">Ship Management</Link></NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item><Link href="/crew-management" className="menu">Crew Management</Link></NavDropdown.Item>
-              <NavDropdown.Divider />
-              {/* <NavDropdown.Item><Link href="/ship-agency-logistics" className="menu">Ship Agency & Logistics</Link></NavDropdown.Item>
+      <style>
+        {
+          `
+        .custom-link-w {
+          width:80% !important
+        }
+        `
+        }
+      </style>
+      <Navbar expand="lg" className="wbg-main" >
+        <Container>
+          <Link href="/" className='custom-link-w'>
+            <Image src="/images/logo.svg" className="logo" width="100" height="80" alt="nautilus shipping" />
+          </Link>
+
+          <Navbar.Toggle aria-controls="navbarScroll" onClick={handleShow} />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              className="me-auto my-2 my-lg-0"
+              style={{ maxHeight: '100px' }}
+              navbarScroll
+            >
+              <Link href="/our-approach" className="nav-link ">Our Approach</Link>
+              <NavDropdown title="Services" id="navbarScrollingDropdowns">
+                <NavDropdown.Item ><Link href="/ship-management" className="menu">Ship Management</Link></NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item><Link href="/crew-management" className="menu">Crew Management</Link></NavDropdown.Item>
+                <NavDropdown.Divider />
+                {/* <NavDropdown.Item><Link href="/ship-agency-logistics" className="menu">Ship Agency & Logistics</Link></NavDropdown.Item>
               <NavDropdown.Divider /> */}
-              <NavDropdown.Item><Link href="/inspection" className="menu">Inspection</Link></NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item> <Link href="/commercial-services" className="menu">Commercial Services</Link></NavDropdown.Item>
-              
-            </NavDropdown>
-            <Link href="/fleet" className="nav-link">Fleet</Link>
-            <Link href="/careers" className="nav-link">Careers</Link>
-            <Link href="/news-insights" className="nav-link">News & Insights</Link>
-            <NavDropdown title="About Us" id="navbarScrollingDropdown">
-              <NavDropdown.Item ><Link href="/company" className="menu">Company</Link></NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item ><Link href="/team" className="menu">Team</Link></NavDropdown.Item>
-            </NavDropdown>
-            
-            <Link href="/contact-us" className="nav-link">Contact</Link>
-          </Nav>
-         
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-   <Offcanvas show={show} onHide={handleClose} className="wbg-main">
-   <Offcanvas.Header closeButton>
-     <Offcanvas.Title className="text-white">Menu</Offcanvas.Title>
-   </Offcanvas.Header>
-   <Offcanvas.Body>
+                <NavDropdown.Item><Link href="/inspection" className="menu">Inspection</Link></NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item> <Link href="/commercial-services" className="menu">Commercial Services</Link></NavDropdown.Item>
+
+              </NavDropdown>
+              <Link href="/fleet" className="nav-link">Fleet</Link>
+              <Link href="/careers" className="nav-link">Careers</Link>
+              <Link href="/news-insights" className="nav-link">News & Insights</Link>
+              <NavDropdown title="About Us" id="navbarScrollingDropdown">
+                <NavDropdown.Item ><Link href="/company" className="menu">Company</Link></NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item ><Link href="/team" className="menu">Team</Link></NavDropdown.Item>
+              </NavDropdown>
+
+              <Link href="/contact-us" className="nav-link">Contact</Link>
+            </Nav>
+
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      <Offcanvas show={show} onHide={handleClose} className="wbg-main">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title className="text-white">Menu</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
           <ListGroup>
             <Link href="/our-approach">
               <ListGroup.Item>
-            Our Approach
+                Our Approach
               </ListGroup.Item>
             </Link>
-            <ListGroup.Item  onClick={handleClickMenu1}>Services <i className="fa fa-angle-down"></i></ListGroup.Item>
+            <ListGroup.Item onClick={handleClickMenu1}>Services <i className="fa fa-angle-down"></i></ListGroup.Item>
             {isShownMenu1 && (
               <div>
                 <Link href="/ship-management">
@@ -94,12 +106,12 @@ function NavScrollExample() {
                 </Link>
                 <Link href="/crew-management">
                   <ListGroup.Item>Crew Management</ListGroup.Item></Link>
-                  <Link href="/ship-agency-logistics/">
-                <ListGroup.Item>Ship Agency & Logistics</ListGroup.Item></Link>
+                <Link href="/ship-agency-logistics/">
+                  <ListGroup.Item>Ship Agency & Logistics</ListGroup.Item></Link>
                 <Link href="/inspection/"><ListGroup.Item>Inspection</ListGroup.Item></Link>
                 <Link href="/commercial-services/"><ListGroup.Item>Commercial Services</ListGroup.Item></Link>
-                </div>
-              )}
+              </div>
+            )}
             <Link href="/fleet/"><ListGroup.Item>Fleet</ListGroup.Item></Link>
             <Link href="/careers/"><ListGroup.Item>Careers</ListGroup.Item></Link>
             <Link href="/news-insights/"><ListGroup.Item>News & Insights</ListGroup.Item></Link>
@@ -112,10 +124,10 @@ function NavScrollExample() {
             )}
             <Link href="/contact-us"><ListGroup.Item>Contact</ListGroup.Item></Link>
 
-    </ListGroup>
-   </Offcanvas.Body>
- </Offcanvas>
-</>
+          </ListGroup>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
   );
 }
 

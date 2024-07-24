@@ -67,7 +67,7 @@ function ContainerExample() {
           <Row>
             <Col >
               <p className="fs-1 bogle-bold walmart-default mt-4">Contact Us</p>
-              <p>Contact us for Ship Management, Ship Agency & Logistics, Inspection and Commercial Ship Services.
+              <p>Contact us for Ship Management, Inspection and Commercial Ship Services.
                 <br />Simply fill the form and we will get in touch with you soon.</p>
               <p>Note: Job Seekers, please visit our <Link href={'/careers'}>career job listing page</Link>.</p>
             </Col>
@@ -77,7 +77,7 @@ function ContainerExample() {
             <Col className="text-center">
               <Image src="/images/contact_img.jpeg" width="700" height="620" className="m-width" alt="nautilus shipping" />
             </Col>
-            <Col className="text-center">
+            <Col className="text-center mt-5">
               <ContactForm />
 
             </Col>

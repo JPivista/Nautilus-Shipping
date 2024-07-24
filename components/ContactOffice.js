@@ -83,7 +83,7 @@ const ContactOffice = () => {
                   Singapore-069533
                 </Card.Text>
                 <hr />
-                <Card.Title className="off-phone card-titles" ></Card.Title>
+                <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i> <p className='merriweather mb-0' style={{ fontSize: '20px' }}>+65 62246151</p></Card.Title>
               </Card.Body>
             </Card>
           </Col>

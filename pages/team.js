@@ -54,11 +54,11 @@ const approach = () => {
         alt="Nautilus Shipping Teams"
 
       />
-      <Container className="text-box-1 wbg-main">
+      <Container className="text-box-1 wbg-main mt-3 pt-3">
         <h1 className="text-white header-1">Our Team</h1>
         <p className="fs-6 text-white">Our leadership team is a combination of professionals with deep experience in the industry as well as of the business. Each one of us has built a formidable network of people across departments of the industry. This enables us to be agile in our response to clients’ needs. We are also focused on making Nautilus a place where our people can grow and contribute to the business, the clients, and the industry.</p>
 
-        <Row className='d-lg-flex flex-column'>
+        <Row className='d-flex flex-lg-row flex-column'>
           <Col>
             <Card className="wbg-main">
               <Image class="card-img-top img-team" src="/images/ajay_handa.png" width="250" height="250" alt="nautilus shipping" />
@@ -109,11 +109,6 @@ const approach = () => {
                 <hr className="line" />
                 <Card.Title className="fs-5 txt">Co-Founder & Managing Director</Card.Title>
                 <Card.Text className="fs-6 txt">
-
-
-
-                  Narayan Rajan
-                  Co-Founder & Managing Director
                   A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-founded Nautilus Shipping in 2005.  During his 15+ years stint as the CEO and CO-Founder of Nautilus, Narayan has been the driving force behind the company’s commercial operation. A keen observer of business and technology trends, Narayan constantly looks at ways to customize existing offerings and new possibilities. Narayan holds a Bachelor’s Degree in Electronics from St. Joseph’s Arts and Science College, Bangalore.
                 </Card.Text>
               </Card.Body>
@@ -176,7 +171,6 @@ const approach = () => {
             </Card>
           </Col>
         </Row>
-
         <hr className="line pb-5" />
       </Container>
       <Footer />

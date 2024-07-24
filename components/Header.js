@@ -39,8 +39,10 @@ function NavScrollExample() {
       <style>
         {
           `
-        .custom-link-w {
-          width:80% !important
+          @media(max-width:767px) {
+            .custom-link-w {
+              width:80% !important
+            }
         }
         `
         }

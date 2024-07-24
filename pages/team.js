@@ -165,7 +165,8 @@ const approach = () => {
                 <hr className="line" />
                 <Card.Title className="fs-5 txt">Head Chartering</Card.Title>
                 <Card.Text className="fs-6 txt">
-                  Master Mariner with a double masters in logistics & law, prior to joining Nautilus Capt Eshwar was the head oil & gas for Karaikal Ports. He has had over 20 years of experience in various aspects of shipping.
+                  {/* Master Mariner with a double masters in logistics & law, prior to joining Nautilus Capt Eshwar was the head oil & gas for Karaikal Ports. He has had over 20 years of experience in various aspects of shipping. */}
+                  Capt Eshwar is the Master Mariner with a double masters in logistics & law. Prior to joining Nautilus he was the head oil & gas for Karaikal Ports. He has over 20 years of experience in various aspects of shipping.
                 </Card.Text>
               </Card.Body>
             </Card>

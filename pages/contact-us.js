@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState } from 'react';
 import axios from "axios";
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
@@ -27,7 +27,7 @@ function ContainerExample() {
   };
 
   return (
-      <>
+    <>
       <Head>
         <title>Contact - Ship Management Company, Vessel Management Services | Nautilus Shipping</title>
         <meta name="description" content="Delivering excellence in technical and crew management" />
@@ -44,51 +44,51 @@ function ContainerExample() {
         <meta property="article:modified_time" content="2023-07-06T15:35:40+00:00" />
         <meta property="og:image" content="/images/team_banner.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-    <Header/>
-    
-      <Image
-      src="/images/contact_banner.jpeg"
-      width="800"
-      height="620"
-      background='no-repeat'
-      background-size= 'cover'
-              className="banner-img"
-              alt="nautlus Shipping"
-      
-    />
-    <Container>
-        <Container>
-    <Row>
-        <Col >
-        <p className="fs-1 bogle-bold walmart-default mt-4">Contact Us</p>
-        <p>Contact us for Ship Management, Ship Agency & Logistics, Inspection and Commercial Ship Services.
-<br/>Simply fill the form and we will get in touch with you soon.</p>
-<p>Note: Job Seekers, please visit our <Link href={'/careers'}>career job listing page</Link>.</p>
-        </Col>
-      </Row> 
+      <Header />
 
-      <Row className="m-row">
-        <Col className="text-center">
-       <Image src="/images/contact_img.jpeg" width="700" height="620" className="m-width" alt="nautilus shipping"/>
-        </Col>
-<Col className="text-center">
-<ContactForm/>                          
-      
-</Col>
-      </Row> 
+      <Image
+        src="/images/contact_banner.jpeg"
+        width="800"
+        height="620"
+        background='no-repeat'
+        background-size='cover'
+        className="banner-img"
+        alt="nautlus Shipping"
+
+      />
+      <Container>
+        <Container>
+          <Row>
+            <Col >
+              <p className="fs-1 bogle-bold walmart-default mt-4">Contact Us</p>
+              <p>Contact us for Ship Management, Ship Agency & Logistics, Inspection and Commercial Ship Services.
+                <br />Simply fill the form and we will get in touch with you soon.</p>
+              <p>Note: Job Seekers, please visit our <Link href={'/careers'}>career job listing page</Link>.</p>
+            </Col>
+          </Row>
+
+          <Row className="m-row">
+            <Col className="text-center">
+              <Image src="/images/contact_img.jpeg" width="700" height="620" className="m-width" alt="nautilus shipping" />
+            </Col>
+            <Col className="text-center">
+              <ContactForm />
+
+            </Col>
+          </Row>
+        </Container>
       </Container>
-    </Container>
-<Office/>
-<Container className="g-0" fluid >
-<iframe src="https://www.google.com/maps/d/embed?mid=1IBRS53rdQ_0XFaEjZIsta38g6BXSkMc&ehbc=2E312F" width="100%" height="480"></iframe>
-</Container>
-    <Footer/>
+      <Office />
+      <Container className="g-0" fluid >
+        <iframe src="https://www.google.com/maps/d/embed?mid=1IBRS53rdQ_0XFaEjZIsta38g6BXSkMc&ehbc=2E312F" width="100%" height="480"></iframe>
+      </Container>
+      <Footer />
 
 
 

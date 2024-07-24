@@ -109,7 +109,7 @@ const approach = () => {
                 <hr className="line" />
                 <Card.Title className="fs-5 txt">Co-Founder & Managing Director</Card.Title>
                 <Card.Text className="fs-6 txt">
-                  A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-founded Nautilus Shipping in 2005.  During his 15+ years stint as the CEO and CO-Founder of Nautilus, Narayan has been the driving force behind the company’s commercial operation. A keen observer of business and technology trends, Narayan constantly looks at ways to customize existing offerings and new possibilities. Narayan holds a Bachelor’s Degree in Electronics from St. Joseph’s Arts and Science College, Bangalore.
+                  A passionate and aggressive first-generation entrepreneur, Narayan Rajan, co-founded Nautilus Shipping in 2005.  During his 17+ years stint as the CEO and CO-Founder of Nautilus, Narayan has been the driving force behind the company’s commercial operation. A keen observer of business and technology trends, Narayan constantly looks at ways to customize existing offerings and new possibilities. Narayan holds a Bachelor’s Degree in Electronics from St. Joseph’s Arts and Science College, Bangalore.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -124,7 +124,7 @@ const approach = () => {
                 <hr className="line" />
                 <Card.Title className="fs-5 txt">Co-Founder & Managing Director</Card.Title>
                 <Card.Text className="fs-6 txt">
-                  Ajay is the founder Director and CEO of Nautilus Shipping. He has sailed in various capacities in the merchant navy fleet and worked with reputed organizations ashore. He has over 15 years of experience in the field of manning and management. He also is an internal auditor certified by Lloyd’s. He has over the years established a wide network in the shipping industry is known for his straight forward, ethical and principled approach.
+                  Ajay is the founder Director and CEO of Nautilus Shipping. He has sailed in various capacities in the merchant navy fleet and worked with reputed organizations ashore. He has over 17 years of experience in the field of manning and management. He also is an internal auditor certified by Lloyd’s. He has over the years established a wide network in the shipping industry is known for his straight forward, ethical and principled approach.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -152,7 +152,7 @@ const approach = () => {
                 <hr className="line" />
                 <Card.Title className="fs-5 txt">Head Training​</Card.Title>
                 <Card.Text className="fs-6 txt">
-                  Master Mariner served in command on tier 1 tankers. Certified trainer, vetting inspector and lead Auditor. Comes with over 15 years of shore experience and has setup the entire training division at Nautilus Shipping.
+                  Master Mariner served in command on tier 1 tankers. Certified trainer, vetting inspector and lead Auditor. Comes with over 17 years of shore experience and has setup the entire training division at Nautilus Shipping.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -166,7 +166,7 @@ const approach = () => {
                 <Card.Title className="fs-5 txt">Head Chartering</Card.Title>
                 <Card.Text className="fs-6 txt">
                   {/* Master Mariner with a double masters in logistics & law, prior to joining Nautilus Capt Eshwar was the head oil & gas for Karaikal Ports. He has had over 20 years of experience in various aspects of shipping. */}
-                  Capt Eshwar is the Master Mariner with a double masters in logistics & law. Prior to joining Nautilus he was the head oil & gas for Karaikal Ports. He has over 20 years of experience in various aspects of shipping.
+                  Capt. Eshwar is the Master Mariner with a double masters in logistics & law. Prior to joining Nautilus he was the head oil & gas for Karaikal Ports. He has over 20 years of experience in various aspects of shipping.
                 </Card.Text>
               </Card.Body>
             </Card>

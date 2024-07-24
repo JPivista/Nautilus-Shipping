@@ -108,8 +108,8 @@ function NavScrollExample() {
                 </Link>
                 <Link href="/crew-management">
                   <ListGroup.Item>Crew Management</ListGroup.Item></Link>
-                <Link href="/ship-agency-logistics/">
-                  <ListGroup.Item>Ship Agency & Logistics</ListGroup.Item></Link>
+                {/* <Link href="/ship-agency-logistics/">
+                  <ListGroup.Item>Ship Agency & Logistics</ListGroup.Item></Link> */}
                 <Link href="/inspection/"><ListGroup.Item>Inspection</ListGroup.Item></Link>
                 <Link href="/commercial-services/"><ListGroup.Item>Commercial Services</ListGroup.Item></Link>
               </div>

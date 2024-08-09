@@ -112,11 +112,7 @@ const ContactForm = ({ subject }) => {
     // Retrieve positions based on vesselId
     switch (vesselId) {
       case '1':
-        setPositions(
-          [
-            'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-          ]
-        );
+        setPositions(['Chief Officer', 'Chief Engineer', 'Master', '2nd Engineer']);
         setPosition('')
         break;
       case '2':
@@ -124,36 +120,23 @@ const ContactForm = ({ subject }) => {
         setPosition('')
         break;
       case '3':
-        setPositions([
-          'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-        ]);
+        setPositions(['Chief Officer', '2nd Officer', '3rd Officer', 'Chief Engineer', '2nd Engineer', '4th Engineer', 'Oiler', 'Electrical Officer (ETO)']);
         setPosition('')
         break;
       case '4':
-        setPositions([
-          'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-        ])
+        setPositions(['Master', 'Chief Officer', '2nd Officer', '3rd Officer', '2nd Engineer', '3rd Engineer', '4th Engineer', 'AB (Able Bodied Seaman)', 'Electrical Officer (ETO)'])
         setPosition('')
         break;
       case '5':
-        setPositions([
-          'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-        ])
+        setPositions(['Chief Officer', '2nd Officer', '3rd Officer', 'Chief Engineer', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Junior Engineer', 'Electrical officers (ETO)', 'ABs (Able Bodied Seaman)'])
         setPosition('')
         break;
       case '6':
-        setPositions(
-          [
-            'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-          ])
+        setPositions(['3rd Officer', '3rd Engineer', '4th Engineer', 'ABs (Able Bodied Seaman)', 'Oiler', 'Fitter', 'Ratings', 'Electrical Officer (ETO)'])
         setPosition('')
         break;
       case '7':
-        setPositions(
-          [
-            'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-          ]
-        )
+        setPositions(['3rd Officer', '2nd Engineer', '4th Engineer'])
         setPosition('')
         break;
       default:

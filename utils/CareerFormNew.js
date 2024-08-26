@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Col, Row, Form } from 'react-bootstrap';
-import { RotatingLines } from 'react-loader-spinner';
-import server from '../config.json'
-import { Country, State, City } from 'country-state-city';
-import { useRouter } from 'next/router'
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Col, Row, Form } from "react-bootstrap";
+import { RotatingLines } from "react-loader-spinner";
+import server from "../config.json";
+import { Country, State, City } from "country-state-city";
+import { useRouter } from "next/router";
 
 const ContactForm = ({ subject }) => {
   const [yourState, setState] = useState(null);
@@ -14,70 +13,70 @@ const ContactForm = ({ subject }) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState({});
   const [fileErrors, setFileErrors] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState(false);
   const [formVisible, setFormVisible] = useState(true);
-  const [selectCountry, SetSelectCountry] = useState('IN');
-  const [selectState, SetSelectState] = useState('KA');
-  const [hideSubmitButton, setHideSubmitButton] = useState(true)
-  const [selectedVessel, setSelectedVessel] = useState('');
+  const [selectCountry, SetSelectCountry] = useState("IN");
+  const [selectState, SetSelectState] = useState("KA");
+  const [hideSubmitButton, setHideSubmitButton] = useState(true);
+  const [selectedVessel, setSelectedVessel] = useState("");
   const [positions, setPositions] = useState([]);
-  const [newposition, setPosition] = useState('');
+  const [newposition, setPosition] = useState("");
   const router = useRouter();
   const { utm_source, utm_medium, utm_campaign, utm_id } = router.query;
   const query = router.query;
 
   const vessel = [
     {
-      'id': '1',
-      'vessel_name': 'LPG Tanker'
+      id: "1",
+      vessel_name: "LPG Tanker",
     },
     {
-      'id': '2',
-      'vessel_name': 'Mini Bulk Carrier'
+      id: "2",
+      vessel_name: "Passenger Vessel",
     },
     {
-      'id': '3',
-      'vessel_name': 'Crude Oil Tanker (Suezmax)'
+      id: "3",
+      vessel_name: "Mini Bulk Carrier",
     },
     {
-      'id': '4',
-      'vessel_name': 'Panamax Bulk Container'
+      id: "4",
+      vessel_name: "Crude Oil Tanker",
+    },
+    // {
+    //   id: "5",
+    //   vessel_name: "Panamax Bulk Container",
+    // },
+    {
+      id: "6",
+      vessel_name: "Ethylene Carrier",
     },
     {
-      'id': '5',
-      'vessel_name': 'Ethylene Carrier'
+      id: "7",
+      vessel_name: "General Bulk Carrier",
     },
     {
-      'id': '6',
-      'vessel_name': 'General Bulk Carrier'
+      id: "8",
+      vessel_name: "Container Vessel",
     },
-    {
-      'id': '7',
-      'vessel_name': 'Container Vessel'
-    },
+  ];
 
-  ]
-
-  const position = [
-
-  ]
+  const position = [];
 
   const [formData, setFormData] = useState({
-    firstname: '',
-    contactNo: '',
-    email: '',
-    state: '',
-    city: '',
-    indosNo: '',
-    vessel: '',
-    position: '',
-    resume: '',
-    utm_source: '',
-    utm_medium: '',
-    utm_campaign: '',
+    firstname: "",
+    contactNo: "",
+    email: "",
+    state: "",
+    city: "",
+    indosNo: "",
+    vessel: "",
+    position: "",
+    resume: "",
+    utm_source: "",
+    utm_medium: "",
+    utm_campaign: "",
   });
-
 
   const handleStateChange = (event) => {
     // Call the parent component's onChange function with the selected value
@@ -86,8 +85,8 @@ const ContactForm = ({ subject }) => {
     // Get the label (text) of the selected option
     const selectedLabel = selectedOption.text;
     //alert(selectedValue);
-    SetSelectState(selectedValue)
-    setState(selectedLabel)
+    SetSelectState(selectedValue);
+    setState(selectedLabel);
     //console.log(selectedLabel)
   };
 
@@ -99,7 +98,7 @@ const ContactForm = ({ subject }) => {
     const selectedLabel = selectedOption.text;
     // alert(selectedValue);
     // SetSelectState(selectedValue)
-    setCity(selectedLabel)
+    setCity(selectedLabel);
     //console.log(selectedLabel)
   };
 
@@ -111,96 +110,221 @@ const ContactForm = ({ subject }) => {
     //alert(selectedOption.text);
     // Retrieve positions based on vesselId
     switch (vesselId) {
-      case '1':
-        setPositions(
-          [
-            'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-          ]
-        );
-        setPosition('')
-        break;
-      case '2':
-        setPositions(['NCV Master', 'NCV Mate', 'NWKO/2nd Officer', 'NCV Chief Engineer', 'NCV 2nd Engineer']);
-        setPosition('')
-        break;
-      case '3':
+      case "1":
         setPositions([
-          'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
+          "Gas Engineer",
+          "Chief Officer ",
+          "2nd Officer",
+          "3rd Officer ",
+          "Deck Cadet",
+          "Able - Bodied Seaman(ABs)",
+          "Bosun",
+          "Ordinary Seaman(OS)",
+          "Chief Engineer ",
+          "2nd Engineer",
+          "3rd Engineer",
+          "4th Engineer",
+          "Electrical Officer (ETO)",
+          "Wiper",
+          "Fitter",
+          "Cook",
+          "Welder",
+          "Messman",
+          "Motorman",
         ]);
-        setPosition('')
+        setPosition("");
         break;
-      case '4':
+      case "2":
         setPositions([
-          'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-        ])
-        setPosition('')
+          "Chief Officer ",
+          "2nd Officer",
+          "3rd Officer ",
+          "Deck Cadet",
+          "Able - Bodied Seaman(ABs)",
+          "Bosun",
+          "Ordinary Seaman(OS)",
+          "Chief Engineer ",
+          "2nd Engineer",
+          "3rd Engineer",
+          "4th Engineer",
+          "Electrical Officer (ETO)",
+          "Wiper",
+          "Fitter",
+          "Cook",
+          "Welder",
+          "Messman",
+          "Motorman",
+        ]);
+        setPosition("");
         break;
-      case '5':
+      case "3":
         setPositions([
-          'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-        ])
-        setPosition('')
+          "NCV Master",
+          "NCV Mate",
+          "NWKO/2nd Officer",
+          "NCV Chief Engineer",
+          "NCV 2nd Engineer",
+        ]);
+        setPosition("");
         break;
-      case '6':
-        setPositions(
-          [
-            'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-          ])
-        setPosition('')
+      case "4":
+        setPositions([
+          "Chief Officer ",
+          "2nd Officer",
+          "3rd Officer ",
+          "Deck Cadet",
+          "Able - Bodied Seaman(ABs)",
+          "Bosun",
+          "Ordinary Seaman(OS)",
+          "Chief Engineer ",
+          "2nd Engineer",
+          "3rd Engineer",
+          "4th Engineer",
+          "Electrical Officer (ETO)",
+          "Wiper",
+          "Fitter",
+          "Cook",
+          "Welder",
+          "Messman",
+          "Motorman",
+        ]);
+        setPosition("");
         break;
-      case '7':
-        setPositions(
-          [
-            'Chief Officer ', '2nd Officer', '3rd Officer ', 'Deck Cadet', 'Able - Bodied Seaman(ABs)', 'Bosun', 'Ordinary Seaman(OS)', 'Chief Engineer ', '2nd Engineer', '3rd Engineer', '4th Engineer', 'Electrical Officer (ETO)'
-          ]
-        )
-        setPosition('')
+      // case "5":
+      //   setPositions([
+      //     "Chief Officer ",
+      //     "2nd Officer",
+      //     "3rd Officer ",
+      //     "Deck Cadet",
+      //     "Able - Bodied Seaman(ABs)",
+      //     "Bosun",
+      //     "Ordinary Seaman(OS)",
+      //     "Chief Engineer ",
+      //     "2nd Engineer",
+      //     "3rd Engineer",
+      //     "4th Engineer",
+      //     "Electrical Officer (ETO)",
+      //   ]);
+      //   setPosition("");
+      //   break;
+      case "6":
+        setPositions([
+          "Chief Officer ",
+          "2nd Officer",
+          "3rd Officer ",
+          "Deck Cadet",
+          "Able - Bodied Seaman(ABs)",
+          "Bosun",
+          "Ordinary Seaman(OS)",
+          "Chief Engineer ",
+          "2nd Engineer",
+          "3rd Engineer",
+          "4th Engineer",
+          "Electrical Officer (ETO)",
+          "Wiper",
+          "Fitter",
+          "Cook",
+          "Welder",
+          "Messman",
+          "Motorman",
+        ]);
+        setPosition("");
+        break;
+      case "7":
+        setPositions([
+          "Chief Officer ",
+          "2nd Officer",
+          "3rd Officer ",
+          "Deck Cadet",
+          "Able - Bodied Seaman(ABs)",
+          "Bosun",
+          "Ordinary Seaman(OS)",
+          "Chief Engineer ",
+          "2nd Engineer",
+          "3rd Engineer",
+          "4th Engineer",
+          "Electrical Officer (ETO)",
+          "Wiper",
+          "Fitter",
+          "Cook",
+          "Welder",
+          "Messman",
+          "Motorman",
+        ]);
+        setPosition("");
+        break;
+      case "8":
+        setPositions([
+          "Chief Officer ",
+          "2nd Officer",
+          "3rd Officer ",
+          "Deck Cadet",
+          "Able - Bodied Seaman(ABs)",
+          "Bosun",
+          "Ordinary Seaman(OS)",
+          "Chief Engineer ",
+          "2nd Engineer",
+          "3rd Engineer",
+          "4th Engineer",
+          "Electrical Officer (ETO)",
+          "Wiper",
+          "Fitter",
+          "Cook",
+          "Welder",
+          "Messman",
+          "Motorman",
+        ]);
+        setPosition("");
         break;
       default:
         setPositions([]);
-        setPosition('')
+        setPosition("");
     }
   };
   const handlePositionChange = (e) => {
     const position = e.target.value;
     // console.log(position)
-    setPosition(position)
+    setPosition(position);
+  };
 
-  }
-
-
-  const stateData = State.getStatesOfCountry(selectCountry).map(state => ({
+  const stateData = State.getStatesOfCountry(selectCountry).map((state) => ({
     value: state.value,
     displayValue: state.name,
-    innerValue: state.isoCode
+    innerValue: state.isoCode,
   }));
-  const cityData = City.getCitiesOfState(selectCountry, selectState).map(city => ({
-    CityValue: city.value,
-    CityValue: city.name,
-  }))
-
+  const cityData = City.getCitiesOfState(selectCountry, selectState).map(
+    (city) => ({
+      CityValue: city.value,
+      CityValue: city.name,
+    })
+  );
 
   const isBlank = (str) => {
     return !str.trim();
   };
   //const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+  const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
   const customErrors = {
-    field: 'email',
-    message: 'Please enter a valid email address.'
-  }
+    field: "email",
+    message: "Please enter a valid email address.",
+  };
   const customDomainErrors = {
-    field: 'email',
-    message: 'This email domain is not allowed.'
-  }
+    field: "email",
+    message: "This email domain is not allowed.",
+  };
   const customPhoneErrors = {
-    field: 'contactNo',
-    message: 'Please enter only numbers.'
-  }
+    field: "contactNo",
+    message: "Please enter only numbers.",
+  };
 
-  const notAllowedDomains = ['test.com', 'sample.com', 'example.com', 'testing.com'];
+  const notAllowedDomains = [
+    "test.com",
+    "sample.com",
+    "example.com",
+    "testing.com",
+  ];
   function isValidEmail(email) {
-    const [_, domain] = email.split('@');
+    const [_, domain] = email.split("@");
     return notAllowedDomains.includes(domain);
   }
   const handleChange = (e) => {
@@ -211,34 +335,32 @@ const ContactForm = ({ subject }) => {
       // Check if the value contains only numbers
       if (!/^\d+$/.test(value)) {
         // If the value contains non-numeric characters, show an alert
-        const fieldErrors = {}
+        const fieldErrors = {};
         const { field, message } = customPhoneErrors;
         fieldErrors[field] = message;
         setErrors(fieldErrors);
         //alert('Please enter only numbers.');
         return; // Stop further processing
-      }
-      else {
-        setErrors('');
+      } else {
+        setErrors("");
       }
     }
 
     if (e.target.name === "email") {
       if (!emailRegex.test(e.target.value)) {
         //console.log("enter valid email address")
-        const fieldErrors = {}
+        const fieldErrors = {};
         const { field, message } = customErrors;
         fieldErrors[field] = message;
         setErrors(fieldErrors);
         //alert('valid email enter')
-      }
-      else {
+      } else {
         //console.log("email is valid")
-        setErrors('');
+        setErrors("");
       }
       if (isValidEmail(e.target.value)) {
         //console.log('Email domain is not allowed');
-        const fieldErrors = {}
+        const fieldErrors = {};
         const { field, message } = customDomainErrors;
         fieldErrors[field] = message;
         setErrors(fieldErrors);
@@ -263,25 +385,24 @@ const ContactForm = ({ subject }) => {
     });
   };
 
-
   const customFileErrors = {
-    field: 'resume',
-    message: 'Invalid file type. Allowed types are PDF, DOC, DOCX,RTF and TXT.'
-  }
+    field: "resume",
+    message: "Invalid file type. Allowed types are PDF, DOC, DOCX,RTF and TXT.",
+  };
   const handleFileChange = (e) => {
     const selectedFile = e.target.files[0];
 
     if (selectedFile) {
       // Check file extension
-      const allowedExtensions = ['pdf', 'doc', 'docx', 'rtf', 'txt'];
-      const fileExtension = selectedFile.name.split('.').pop().toLowerCase();
+      const allowedExtensions = ["pdf", "doc", "docx", "rtf", "txt"];
+      const fileExtension = selectedFile.name.split(".").pop().toLowerCase();
       if (allowedExtensions.includes(fileExtension)) {
         // Valid file type
         setHideSubmitButton(false);
-        setErrors('');
+        setErrors("");
       } else {
         // Invalid file type
-        const fieldErrors = {}
+        const fieldErrors = {};
         const { field, message } = customFileErrors;
         fieldErrors[field] = message;
         setErrors(fieldErrors);
@@ -291,9 +412,7 @@ const ContactForm = ({ subject }) => {
 
       setFile(selectedFile);
     }
-
   };
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -307,222 +426,261 @@ const ContactForm = ({ subject }) => {
       // formDataToSend.append('city', yourState);
       if (yourState) {
         //console.log(yourState)
-        formDataToSend.append('state', yourState);
+        formDataToSend.append("state", yourState);
       }
       if (yourCity) {
         //console.log(yourCity)
-        formDataToSend.append('city', yourCity);
+        formDataToSend.append("city", yourCity);
       }
       if (vessel) {
         //console.log(vessel);
-        formDataToSend.append('vessel', selectedVessel);
+        formDataToSend.append("vessel", selectedVessel);
       }
       if (position) {
         //console.log('position is here');
-        formDataToSend.append('position', newposition);
+        formDataToSend.append("position", newposition);
       }
 
       if (!file) {
         //console.log('empty')
         setHideSubmitButton(true);
         setFileErrors(true);
-      }
-      else {
+      } else {
         //console.log('not empty')
-        formDataToSend.append('resume', file);
-        setFileErrors(false)
+        formDataToSend.append("resume", file);
+        setFileErrors(false);
         setHideSubmitButton(false);
       }
       if (utm_source) {
         console.log(utm_source);
-        formDataToSend.append('utm_source', utm_source);
+        formDataToSend.append("utm_source", utm_source);
       }
       if (utm_medium) {
         console.log(utm_medium);
-        formDataToSend.append('utm_medium', utm_medium);
+        formDataToSend.append("utm_medium", utm_medium);
       }
       if (utm_campaign) {
         console.log(utm_campaign);
-        formDataToSend.append('utm_campaign', utm_campaign);
+        formDataToSend.append("utm_campaign", utm_campaign);
       }
 
-      const response = await axios.post(`${server.SERVER_FROM}contact-form-7/v1/contact-forms/9356/feedback`,
+      const response = await axios.post(
+        `${server.SERVER_FROM}contact-form-7/v1/contact-forms/9356/feedback`,
         formDataToSend,
         {
           headers: {
-            'Content-Type': 'multipart/form-data',
+            "Content-Type": "multipart/form-data",
           },
         }
       );
 
       //console.log(response)
-      if (response.data.status === 'mail_sent') {
+      if (response.data.status === "mail_sent") {
         setFormVisible(false); // Hide the form
         setSuccessMessage(true);
-      } else if (response.data.status == 'validation_failed') {
+      } else if (response.data.status == "validation_failed") {
         const fieldErrors = {};
         const { status, invalid_fields } = response.data;
-        console.log(invalid_fields)
+        console.log(invalid_fields);
         invalid_fields.forEach((field) => {
           fieldErrors[field.field] = field.message;
         });
         setErrors(fieldErrors);
         //console.log(fieldErrors);
       } else {
-        setError('An error occurred. Please try again.');
+        setError("An error occurred. Please try again.");
       }
     } catch (err) {
-      setError('An error occurred. Please try again.');
+      setError("An error occurred. Please try again.");
     }
 
     setIsSubmitting(false);
   };
 
-
   useEffect(() => {
     // Tracking code function
     const trackConversion = () => {
-      window.lintrk('track', { conversion_id: 17896705 });
+      window.lintrk("track", { conversion_id: 17896705 });
     };
 
     // Attach event listener to the submit button
-    const submitButton = document.getElementById('submit-button');
+    const submitButton = document.getElementById("submit-button");
     if (submitButton) {
-      submitButton.addEventListener('click', trackConversion);
+      submitButton.addEventListener("click", trackConversion);
     }
 
     // Clean up event listener on component unmount
     return () => {
       if (submitButton) {
-        submitButton.removeEventListener('click', trackConversion);
+        submitButton.removeEventListener("click", trackConversion);
       }
     };
   }, []);
 
   return (
     <>
-      {successMessage ? '' : (<small style={{ color: '#555' }}>All fields are mandatory</small>)}
-      {successMessage ? '' : (<h3>Submit a CV/Resume:</h3>)}
+      {successMessage ? (
+        ""
+      ) : (
+        <small style={{ color: "#555" }}>All fields are mandatory</small>
+      )}
+      {successMessage ? "" : <h3>Submit a CV/Resume:</h3>}
       <div className="form-bg mb-5">
         {formVisible ? (
           <form onSubmit={handleSubmit} encType="multipart/form-data">
             <Row>
               <Col>
                 <div className="mb-3">
-                  <input type="text"
+                  <input
+                    type="text"
                     name="firstname"
-                    className={`form-control ${errors && errors.firstname ? 'is-invalid' : ''}`}
+                    className={`form-control ${
+                      errors && errors.firstname ? "is-invalid" : ""
+                    }`}
                     placeholder="Enter Name"
                     value={formData.name}
                     onChange={handleChange}
                     inputProps={{ maxLength: 6 }}
-
                   />
-                  {errors && errors.firstname && <div className="invalid-feedback">{errors.firstname}</div>}
+                  {errors && errors.firstname && (
+                    <div className="invalid-feedback">{errors.firstname}</div>
+                  )}
                 </div>
               </Col>
             </Row>
             <Row>
               <Col lg={6} sm={12}>
                 <div className="mb-3">
-                  <input type="phone"
+                  <input
+                    type="phone"
                     name="contactNo"
                     maxLength="10"
-                    className={`form-control ${errors && errors.contactNo ? 'is-invalid' : ''}`}
+                    className={`form-control ${
+                      errors && errors.contactNo ? "is-invalid" : ""
+                    }`}
                     placeholder="Contact No."
                     value={formData.contactNo}
-                    onChange={handleChange} />
-                  {errors && errors.contactNo && <div className="invalid-feedback">{errors.contactNo}</div>}
+                    onChange={handleChange}
+                  />
+                  {errors && errors.contactNo && (
+                    <div className="invalid-feedback">{errors.contactNo}</div>
+                  )}
                 </div>
               </Col>
 
               <Col lg={6} sm={12}>
                 <div className="mb-3">
-                  <input type="email" name="email" className={`form-control ${errors && errors.email ? 'is-invalid' : ''}`}
+                  <input
+                    type="email"
+                    name="email"
+                    className={`form-control ${
+                      errors && errors.email ? "is-invalid" : ""
+                    }`}
                     placeholder="Email"
                     value={formData.email}
-                    onChange={handleChange} />
-                  {errors && errors.email && <div className="invalid-feedback">{errors.email}</div>}
+                    onChange={handleChange}
+                  />
+                  {errors && errors.email && (
+                    <div className="invalid-feedback">{errors.email}</div>
+                  )}
                 </div>
               </Col>
             </Row>
             <Row>
               <Col lg={6} sm={12}>
-                <div className='mb-3'>
-
-                  <select onChange={handleStateChange}
-                    id='state'
-                    name='state'
-                    className={`form-select form-control ${errors && errors.state ? 'is-invalid' : ''}`}
+                <div className="mb-3">
+                  <select
+                    onChange={handleStateChange}
+                    id="state"
+                    name="state"
+                    className={`form-select form-control ${
+                      errors && errors.state ? "is-invalid" : ""
+                    }`}
                     defaultValue={yourState}
                   >
                     <option value="">Select State</option>
                     {stateData.map((option, index) => (
-                      <option key={index} value={option.innerValue} >
+                      <option key={index} value={option.innerValue}>
                         {option.displayValue}
                       </option>
                     ))}
                   </select>
-                  {errors && errors.state && <div className="invalid-feedback">{errors.state}</div>}
+                  {errors && errors.state && (
+                    <div className="invalid-feedback">{errors.state}</div>
+                  )}
                 </div>
               </Col>
 
               <Col lg={6} sm={12}>
-                <div className="mb-3" >
+                <div className="mb-3">
                   <select
-                    className={`form-control form-select ${errors && errors.city ? 'is-invalid' : ''}`}
+                    className={`form-control form-select ${
+                      errors && errors.city ? "is-invalid" : ""
+                    }`}
                     id="city"
                     name="city"
                     value={yourCity}
-                    onChange={handleCityChange}>
+                    onChange={handleCityChange}
+                  >
                     <option>Select City</option>
                     {cityData.map((option, index) => (
-                      <option key={index} value={option.CityValue} >
+                      <option key={index} value={option.CityValue}>
                         {option.CityValue}
                       </option>
                     ))}
                   </select>
 
-                  {errors && errors.city && <div className="invalid-feedback">{errors.city}</div>}
+                  {errors && errors.city && (
+                    <div className="invalid-feedback">{errors.city}</div>
+                  )}
                 </div>
               </Col>
             </Row>
             <Row>
               <Col lg={6} sm={12}>
-                <div className="mb-3" >
+                <div className="mb-3">
                   <select
-                    className={`form-control form-select ${errors && errors.vessel ? 'is-invalid' : ''}`}
+                    className={`form-control form-select ${
+                      errors && errors.vessel ? "is-invalid" : ""
+                    }`}
                     id="vessel"
                     name="vessel"
-
-                    onChange={handleVesselChange}>
+                    onChange={handleVesselChange}
+                  >
                     <option value="">Select Vessel</option>
                     {vessel.map((option, index) => (
-                      <option key={index} value={option.id} >
+                      <option key={index} value={option.id}>
                         {option.vessel_name}
                       </option>
                     ))}
                   </select>
 
-                  {errors && errors.vessel && <div className="invalid-feedback">{errors.vessel}</div>}
+                  {errors && errors.vessel && (
+                    <div className="invalid-feedback">{errors.vessel}</div>
+                  )}
                 </div>
               </Col>
               <Col>
-                <div className='mb-3'>
+                <div className="mb-3">
                   <select
                     id="position"
                     name="position"
-                    className={`form-control form-select ${errors && errors.position ? 'is-invalid' : ''}`}
+                    className={`form-control form-select ${
+                      errors && errors.position ? "is-invalid" : ""
+                    }`}
                     disabled={!selectedVessel}
                     onChange={handlePositionChange}
                   >
                     <option value="">Select Position</option>
-                    {positions.map(position => (
+                    {positions.map((position) => (
                       <option key={position} value={position}>
-                        {position}</option>
+                        {position}
+                      </option>
                     ))}
                   </select>
-                  {errors && errors.position && <div className="invalid-feedback">{errors.position}</div>}
+                  {errors && errors.position && (
+                    <div className="invalid-feedback">{errors.position}</div>
+                  )}
                 </div>
               </Col>
             </Row>
@@ -534,30 +692,48 @@ const ContactForm = ({ subject }) => {
                     name="indosNo"
                     maxLength="8"
                     minLength="8"
-                    className={`form-control ${errors && errors.indosNo ? 'is-invalid' : ''}`}
+                    className={`form-control ${
+                      errors && errors.indosNo ? "is-invalid" : ""
+                    }`}
                     placeholder="INDoS No."
                     value={formData.indosNo}
                     onChange={handleChange}
                     onKeyDown={(e) => {
                       // Allow only numeric input and some control keys
-                      if (!(e.key === 'Tab' || e.key === 'Backspace' || e.key === 'Delete' || e.key === 'ArrowLeft' || e.key === 'ArrowRight' || (e.key >= '0' && e.key <= '9'))) {
+                      if (
+                        !(
+                          e.key === "Tab" ||
+                          e.key === "Backspace" ||
+                          e.key === "Delete" ||
+                          e.key === "ArrowLeft" ||
+                          e.key === "ArrowRight" ||
+                          (e.key >= "0" && e.key <= "9")
+                        )
+                      ) {
                         e.preventDefault();
                       }
                     }}
                   />
-                  {errors && errors.indosNo && <div className="invalid-feedback">{errors.indosNo}</div>}
+                  {errors && errors.indosNo && (
+                    <div className="invalid-feedback">{errors.indosNo}</div>
+                  )}
                 </div>
               </Col>
 
-
               <Col sm={12} lg={12}>
-
                 <div class="input-group">
-                  <input type="file" name="resume" id="resume" class={`form-control ${errors && errors.resume ? 'is-invalid' : ''}
-                    ${fileErrors ? 'is-invalid' : ''} `}
+                  <input
+                    type="file"
+                    name="resume"
+                    id="resume"
+                    class={`form-control ${
+                      errors && errors.resume ? "is-invalid" : ""
+                    }
+                    ${fileErrors ? "is-invalid" : ""} `}
                     onChange={handleFileChange}
                     aria-describedby="inputGroupFileAddon04"
-                    aria-label="Upload" />
+                    aria-label="Upload"
+                  />
                 </div>
                 {/* <Form.Group controlId="formFile" className="">
                   <Form.Control type="file" name="resume" id="resume" onChange={handleFileChange}
@@ -567,30 +743,58 @@ const ContactForm = ({ subject }) => {
                     `}
                     />
                 </Form.Group> */}
-                <p style={{ lineHeight: '16px', fontSize: '12px' }}>Complete your job application by uploading your resume or CV. Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.</p>
-                {errors && errors.resume && <div className="invalid-feedback">{errors.resume}</div>}
-                <div className="fs-6" style={{ color: '#b02a37' }}> {errors && errors.resume && errors.resume}</div>
-                {fileErrors ? <div className="error">Please upload the resume.(doc,docx,pdf)</div> : ''}
-
+                <p style={{ lineHeight: "16px", fontSize: "12px" }}>
+                  Complete your job application by uploading your resume or CV.
+                  Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
+                </p>
+                {errors && errors.resume && (
+                  <div className="invalid-feedback">{errors.resume}</div>
+                )}
+                <div className="fs-6" style={{ color: "#b02a37" }}>
+                  {" "}
+                  {errors && errors.resume && errors.resume}
+                </div>
+                {fileErrors ? (
+                  <div className="error">
+                    Please upload the resume.(doc,docx,pdf)
+                  </div>
+                ) : (
+                  ""
+                )}
               </Col>
             </Row>
             <Row>
               <Col sm={12} lg={12}>
                 <div className="mb-3">
-                  <input type="hidden" name="utm_source" maxLength="8" className='form-control' value={utm_source} />
-
+                  <input
+                    type="hidden"
+                    name="utm_source"
+                    maxLength="8"
+                    className="form-control"
+                    value={utm_source}
+                  />
                 </div>
               </Col>
               <Col sm={12} lg={12}>
                 <div className="mb-3">
-                  <input type="hidden" name="utm_medium" maxLength="8" className='form-control' value={utm_medium} />
-
+                  <input
+                    type="hidden"
+                    name="utm_medium"
+                    maxLength="8"
+                    className="form-control"
+                    value={utm_medium}
+                  />
                 </div>
               </Col>
               <Col sm={12} lg={12}>
                 <div className="mb-3">
-                  <input type="hidden" name="utm_campaign" maxLength="8" className='form-control' value={utm_campaign} />
-
+                  <input
+                    type="hidden"
+                    name="utm_campaign"
+                    maxLength="8"
+                    className="form-control"
+                    value={utm_campaign}
+                  />
                 </div>
               </Col>
             </Row>
@@ -598,10 +802,23 @@ const ContactForm = ({ subject }) => {
               <Col sm={12}>
                 <button
                   id="submit-button"
-                  type="submit" className={hideSubmitButton ? "btn btn-primary register disabled" : "btn btn-primary register"} disabled={isSubmitting}>
+                  type="submit"
+                  className={
+                    hideSubmitButton
+                      ? "btn btn-primary register disabled"
+                      : "btn btn-primary register"
+                  }
+                  disabled={isSubmitting}
+                >
                   Submit
                   {isSubmitting && (
-                    <RotatingLines strokeColor="white" strokeWidth="3" animationDuration="1" width="20" visible={true} />
+                    <RotatingLines
+                      strokeColor="white"
+                      strokeWidth="3"
+                      animationDuration="1"
+                      width="20"
+                      visible={true}
+                    />
                   )}
                 </button>
               </Col>
@@ -610,8 +827,12 @@ const ContactForm = ({ subject }) => {
           </form>
         ) : (
           <div className="mt-5 text-center mb-5">
-            <h3 className="fs-4">Thank you for your interest in Nautilus Shipping.</h3>
-            <h3 className="fs-4">We will get in touch with you as soon as possible.</h3>
+            <h3 className="fs-4">
+              Thank you for your interest in Nautilus Shipping.
+            </h3>
+            <h3 className="fs-4">
+              We will get in touch with you as soon as possible.
+            </h3>
           </div>
         )}
       </div>

@@ -8,7 +8,8 @@ import { format } from 'date-fns'
 import Head from 'next/head'
 import PostList from '../utils/PostListCareer';
 import CareerFormNew from '../utils/CareerFormNew';
-import Robots from '../utils/robots'
+import Robots from '../utils/robots';
+// import TestCareerForm from '../utils/TestCareerForm'
 
 const NewCareer = () => {
 
@@ -99,6 +100,7 @@ const NewCareer = () => {
                             <p>Nautilus Shipping is one of the fastest growing shipping companies in India and has multiple shipping job vacancies for the right candidates.</p>
                             <div style={{ background: '#E2E3E3', padding: '14px', color: '#555' }}>
                                 <CareerFormNew subject={'Career Query'} />
+                                {/* <TestCareerForm subject={'Career Query'} /> */}
                             </div>
                         </Col>
                     </Row>

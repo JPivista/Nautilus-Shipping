@@ -23,7 +23,7 @@ const ContactForm = ({ subject }) => {
   const [positions, setPositions] = useState([]);
   const [selectedPosition, setSelectedPosition] = useState("");
   const [newposition, setPosition] = useState("");
-  const[newPositionName, setNewPositionName]= useState("");
+  const [newPositionName, setNewPositionName] = useState("");
   const [newPositions, setNewPositions] = useState([]); // State for new positions based on selected position
   const [isNewPositionDisabled, setIsNewPositionDisabled] = useState(true); // State to disable new position
   const router = useRouter();
@@ -77,7 +77,7 @@ const ContactForm = ({ subject }) => {
     city: "",
     vessel: "",
     position: "",
-    newPositionName:"",
+    newPositionName: "",
     indosNo: "",
     resume: "",
     utm_source: "",
@@ -115,7 +115,7 @@ const ContactForm = ({ subject }) => {
     setSelectedVessel(selectedOption);
     // Retrieve positions based on vesselId
     switch (vesselId) {
-      case "1": 
+      case "1":
         setPositions([
           { id: "101", name: "Gas Engineer" },
           { id: "102", name: "Chief Officer" },
@@ -139,7 +139,7 @@ const ContactForm = ({ subject }) => {
         ]);
         setPosition("");
         break;
-      case "2":  
+      case "2":
         setPositions([
           { id: "120", name: "Chief Officer " },
           { id: "121", name: "2nd Officer" },
@@ -162,7 +162,7 @@ const ContactForm = ({ subject }) => {
         ]);
         setPosition("");
         break;
-      case "3": 
+      case "3":
         setPositions([
           { id: "138", name: "NCV Master" },
           { id: "139", name: "NCV Mate" },
@@ -172,7 +172,7 @@ const ContactForm = ({ subject }) => {
         ]);
         setPosition("");
         break;
-      case "4": 
+      case "4":
         setPositions([
           { id: "143", name: "Chief Officer " },
           { id: "144", name: "2nd Officer" },
@@ -214,7 +214,7 @@ const ContactForm = ({ subject }) => {
       //   setPosition("");
       //   break;
 
-      case "5": 
+      case "5":
         setPositions([
           { id: "161", name: "Chief Officer " },
           { id: "162", name: "2nd Officer" },
@@ -237,7 +237,7 @@ const ContactForm = ({ subject }) => {
         ]);
         setPosition("");
         break;
-      case "6": 
+      case "6":
         setPositions([
           { id: "179", name: "Chief Officer " },
           { id: "180", name: "2nd Officer" },
@@ -284,29 +284,29 @@ const ContactForm = ({ subject }) => {
         setPosition("");
         break;
 
-        case "8":
-          setPositions([
-            { id: "215", name: "Chief Officer " },
-            { id: "216", name: "2nd Officer" },
-            { id: "217", name: "3rd Officer " },
-            { id: "218", name: "Deck Cadet" },
-            { id: "219", name: "Able - Bodied Seaman(ABs)" },
-            { id: "220", name: "Bosun" },
-            { id: "221", name: "Ordinary Seaman(OS)" },
-            { id: "222", name: "Chief Engineer " },
-            { id: "223", name: "2nd Engineer" },
-            { id: "224", name: "3rd Engineer" },
-            { id: "225", name: "4th Engineer" },
-            { id: "226", name: "Electrical Officer (ETO)" },
-            { id: "227", name: "Wiper" },
-            { id: "228", name: "Fitter" },
-            { id: "229", name: "Cook" },
-            { id: "230", name: "Welder" },
-            { id: "231", name: "Messman" },
-            { id: "232", name: "Motorman" },
-          ]);
-          setPosition("");
-          break;
+      case "8":
+        setPositions([
+          { id: "215", name: "Chief Officer " },
+          { id: "216", name: "2nd Officer" },
+          { id: "217", name: "3rd Officer " },
+          { id: "218", name: "Deck Cadet" },
+          { id: "219", name: "Able - Bodied Seaman(ABs)" },
+          { id: "220", name: "Bosun" },
+          { id: "221", name: "Ordinary Seaman(OS)" },
+          { id: "222", name: "Chief Engineer " },
+          { id: "223", name: "2nd Engineer" },
+          { id: "224", name: "3rd Engineer" },
+          { id: "225", name: "4th Engineer" },
+          { id: "226", name: "Electrical Officer (ETO)" },
+          { id: "227", name: "Wiper" },
+          { id: "228", name: "Fitter" },
+          { id: "229", name: "Cook" },
+          { id: "230", name: "Welder" },
+          { id: "231", name: "Messman" },
+          { id: "232", name: "Motorman" },
+        ]);
+        setPosition("");
+        break;
 
       // Add more cases as needed
       default:
@@ -319,12 +319,12 @@ const ContactForm = ({ subject }) => {
 
   const handlePositionChange = (e) => {
     const positionId = e.target.value;
-  
+
     const selectedOption = e.target.options[e.target.selectedIndex];
     // Fetch the data attribute value
-    const positionName = selectedOption.getAttribute('data');
+    const positionName = selectedOption.getAttribute("data");
 
-    console.log("this is the second position",positionName)
+    console.log("this is the second position", positionName);
     setSelectedPosition(positionName);
     setIsNewPositionDisabled(positionId === "");
     // Set new positions based on the position
@@ -523,7 +523,10 @@ const ContactForm = ({ subject }) => {
         ]);
         break;
       case "140":
-        setNewPositions([{ id: "263", name: "NWKO/2nd Officer" }]);
+        setNewPositions([
+          { id: "413", name: "NCV Mate" }, // New Update..
+          { id: "263", name: "NWKO/2nd Officer" },
+        ]);
         break;
       case "141":
         setNewPositions([
@@ -629,7 +632,7 @@ const ContactForm = ({ subject }) => {
         setNewPositions([{ id: "296", name: "Motorman" }]);
         break;
 
-      // case "5":161-178 
+      // case "5":161-178
       case "161":
         setNewPositions([
           { id: "297", name: "Captain (Master)" },
@@ -718,7 +721,7 @@ const ContactForm = ({ subject }) => {
         setNewPositions([{ id: "325", name: "Motorman" }]);
         break;
 
-      //case "6" 179- 196 
+      //case "6" 179- 196
       case "179":
         setNewPositions([
           { id: "326", name: "Captain (Master)" },
@@ -786,7 +789,7 @@ const ContactForm = ({ subject }) => {
         setNewPositions([
           { id: "347", name: "Second Engineer" },
           { id: "348", name: "Electrical Officer (ETO)" },
-        ])
+        ]);
         break;
       case "191":
         setNewPositions([{ id: "349", name: "Wiper" }]);
@@ -896,7 +899,7 @@ const ContactForm = ({ subject }) => {
         setNewPositions([{ id: "383", name: "Motorman" }]);
         break;
 
-          // case "7": 197-214
+      // case "7": 197-214
       case "215":
         setNewPositions([
           { id: "384", name: "Captain (Master)" },
@@ -990,7 +993,7 @@ const ContactForm = ({ subject }) => {
   const handleNewPositionChange = (e) => {
     const newPositionName = e.target.value;
     const newPositionValue = e.target.value;
-    setNewPositionName(newPositionName)
+    setNewPositionName(newPositionName);
     // Handle new position change logic here
     console.log("Selected New Position ID:", newPositionName);
   };
@@ -1145,12 +1148,12 @@ const ContactForm = ({ subject }) => {
         formDataToSend.append("vessel", selectedVessel);
       }
       if (position) {
-        console.log('position is here', selectedPosition );
+        console.log("position is here", selectedPosition);
         formDataToSend.append("position", selectedPosition);
       }
 
       if (newPositionName) {
-        console.log("New Position",newPositionName);
+        console.log("New Position", newPositionName);
         formDataToSend.append("newPositionName", newPositionName);
       }
 
@@ -1382,11 +1385,21 @@ const ContactForm = ({ subject }) => {
                   >
                     <option value="">Select Position</option>
                     {positions.map((position) => (
-                      <option key={position.id} value={position.id} data={position.name}>
+                      <option
+                        key={position.id}
+                        value={position.id}
+                        data={position.name}
+                      >
                         {position.name}
                       </option>
                     ))}
                   </select>
+                  <p
+                    className="pt-1"
+                    style={{ lineHeight: "16px", fontSize: "12px" }}
+                  >
+                    Please select your current/previous Rank/Position.
+                  </p>
                 </div>
               </Col>
 
@@ -1394,7 +1407,6 @@ const ContactForm = ({ subject }) => {
 
               <Col lg={6}>
                 <div className="mb-3">
-                  
                   <select
                     id="newPositions"
                     name="newPositions"
@@ -1410,6 +1422,13 @@ const ContactForm = ({ subject }) => {
                       </option>
                     ))}
                   </select>
+                  <p
+                    className="pt-1"
+                    style={{ lineHeight: "16px", fontSize: "12px" }}
+                  >
+                    Please select the Rank/Position you want to apply at
+                    Nautilus.
+                  </p>
                 </div>
               </Col>
             </Row>
@@ -1473,7 +1492,10 @@ const ContactForm = ({ subject }) => {
                     `}
                     />
                 </Form.Group> */}
-                <p style={{ lineHeight: "16px", fontSize: "12px" }}>
+                <p
+                  className="pt-1"
+                  style={{ lineHeight: "16px", fontSize: "12px" }}
+                >
                   Complete your job application by uploading your resume or CV.
                   Upload either DOC, DOCX, PDF, RTF or TXT file types, 4 MB max.
                 </p>

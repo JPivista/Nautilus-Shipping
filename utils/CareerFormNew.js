@@ -214,6 +214,8 @@ const CareerForm = ({ subject }) => {
       //   setPosition("");
       //   break;
 
+
+      
       case "5":
         setPositions([
           { id: "161", name: "Chief Officer " },
@@ -316,6 +318,8 @@ const CareerForm = ({ subject }) => {
     setNewPositions([]);
     setIsNewPositionDisabled(true);
   };
+
+
 
   const handlePositionChange = (e) => {
     const positionId = e.target.value;

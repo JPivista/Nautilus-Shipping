@@ -6,7 +6,7 @@ import server from "../config.json";
 import { Country, State, City } from "country-state-city";
 import { useRouter } from "next/router";
 
-const ContactForm = ({ subject }) => {
+const CareerForm = ({ subject }) => {
   const [yourState, setState] = useState(null);
   const [yourCity, setCity] = useState(null);
   const [file, setFile] = useState(null);
@@ -1238,10 +1238,11 @@ const ContactForm = ({ subject }) => {
       {successMessage ? (
         ""
       ) : (
-        <small style={{ color: "#555" }}>All fields are mandatory</small>
+        <small style={{ color: "#555"}}>All fields are mandatory</small>
       )}
-      {successMessage ? "" : <h3>Submit a CV/Resume:</h3>}
-      <div className="form-bg mb-5">
+      {successMessage ? "" : <h3>Submit a CV/Resume(Offshore Job):</h3>}
+      
+      <div className="form-bg mb-1">
         {formVisible ? (
           <form onSubmit={handleSubmit} encType="multipart/form-data">
             <Row>
@@ -1517,7 +1518,7 @@ const ContactForm = ({ subject }) => {
             </Row>
             <Row>
               <Col sm={12} lg={12}>
-                <div className="mb-3">
+                <div className="">
                   <input
                     type="hidden"
                     name="utm_source"
@@ -1528,7 +1529,7 @@ const ContactForm = ({ subject }) => {
                 </div>
               </Col>
               <Col sm={12} lg={12}>
-                <div className="mb-3">
+                <div className="">
                   <input
                     type="hidden"
                     name="utm_medium"
@@ -1539,7 +1540,7 @@ const ContactForm = ({ subject }) => {
                 </div>
               </Col>
               <Col sm={12} lg={12}>
-                <div className="mb-3">
+                <div className="">
                   <input
                     type="hidden"
                     name="utm_campaign"
@@ -1592,4 +1593,4 @@ const ContactForm = ({ subject }) => {
   );
 };
 
-export default ContactForm;
+export default CareerForm;

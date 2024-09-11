@@ -118,197 +118,257 @@ const CareerForm = ({ subject }) => {
       case "1":
         setPositions([
           { id: "101", name: "Gas Engineer" },
-          { id: "102", name: "Chief Officer" },
-          { id: "103", name: "2nd Officer" },
-          { id: "104", name: "3rd Officer " },
-          { id: "105", name: "Deck Cadet" },
-          { id: "106", name: "Able - Bodied Seaman(ABs)" },
-          { id: "107", name: "Bosun" },
-          { id: "108", name: "Ordinary Seaman(OS)" },
-          { id: "109", name: "Chief Engineer " },
-          { id: "110", name: "2nd Engineer" },
-          { id: "111", name: "3rd Engineer" },
-          { id: "112", name: "4th Engineer" },
-          { id: "113", name: "Electrical Officer (ETO)" },
-          { id: "114", name: "Wiper" },
-          { id: "115", name: "Fitter" },
-          { id: "116", name: "Cook" },
-          { id: "117", name: "Welder" },
-          { id: "118", name: "Messman" },
-          { id: "119", name: "Motorman" },
+          { id: "102", name: "Captain (Master)" },
+          { id: "103", name: "Chief Officer (Chief Mate)" },
+          { id: "104", name: "Second Officer (Second Mate)" },
+          { id: "105", name: "Third Officer (Third Mate)" },
+          { id: "106", name: "Junior Officer" },
+          { id: "107", name: "Deck Cadet" },
+          { id: "108", name: "Chief Engineer" },
+          { id: "109", name: "Second Engineer" },
+          { id: "110", name: "Third Engineer" },
+          { id: "111", name: "Fourth Engineer" },
+          { id: "112", name: "TME" },
+          { id: "113", name: "Electrical Officer (EO)" },
+          { id: "114", name: "Electo-Technical Officer (ETO)" },
+          { id: "115", name: "Bosun" },
+          { id: "116", name: "Able Seaman(AB)" },
+          { id: "117", name: "Ordinary Seaman(OS)" },
+          { id: "118", name: "Trainee OS" },
+          { id: "119", name: "Fitter" },
+          { id: "120", name: "Motorman/Oiler" },
+          { id: "121", name: "Wiper" },
+          { id: "122", name: "Pumpman" },
+          { id: "123", name: "Chief Cook" },
+          { id: "124", name: "Second Cook" },
+          { id: "125", name: "Trainee Cook" },
+          { id: "126", name: "General Steward" },
+          { id: "127", name: "Steward" },
+          { id: "128", name: "Welder" },
+          { id: "129", name: "Messman" },
         ]);
         setPosition("");
         break;
       case "2":
         setPositions([
-          { id: "120", name: "Chief Officer " },
-          { id: "121", name: "2nd Officer" },
-          { id: "122", name: "3rd Officer " },
-          { id: "123", name: "Deck Cadet" },
-          { id: "124", name: "Able - Bodied Seaman(ABs)" },
-          { id: "125", name: "Bosun" },
-          { id: "126", name: "Ordinary Seaman(OS)" },
-          { id: "127", name: "Chief Engineer " },
-          { id: "128", name: "2nd Engineer" },
-          { id: "129", name: "3rd Engineer" },
-          { id: "130", name: "4th Engineer" },
-          { id: "131", name: "Electrical Officer (ETO)" },
-          { id: "132", name: "Wiper" },
-          { id: "133", name: "Fitter" },
-          { id: "134", name: "Cook" },
-          { id: "135", name: "Welder" },
-          { id: "136", name: "Messman" },
-          { id: "137", name: "Motorman" },
+          { id: "130", name: "Captain (Master)" },
+          { id: "131", name: "Chief Officer (Chief Mate)" },
+          { id: "132", name: "Second Officer (Second Mate)" },
+          { id: "133", name: "Third Officer (Third Mate)" },
+          { id: "134", name: "Junior Officer" },
+          { id: "135", name: "Deck Cadet" },
+          { id: "136", name: "Chief Engineer" },
+          { id: "137", name: "Second Engineer" },
+          { id: "138", name: "Third Engineer" },
+          { id: "139", name: "Fourth Engineer" },
+          { id: "140", name: "TME" },
+          { id: "141", name: "Electrical Officer (EO)" },
+          { id: "142", name: "Electo-Technical Officer (ETO)" },
+          { id: "143", name: "Bosun" },
+          { id: "144", name: "Able Seaman(AB)" },
+          { id: "145", name: "Ordinary Seaman(OS)" },
+          { id: "146", name: "Trainee OS" },
+          { id: "147", name: "Fitter" },
+          { id: "148", name: "Motorman/Oiler" },
+          { id: "149", name: "Wiper" },
+          { id: "150", name: "Pumpman" },
+          { id: "151", name: "Chief Cook" },
+          { id: "152", name: "Second Cook" },
+          { id: "153", name: "Trainee Cook" },
+          { id: "154", name: "General Steward" },
+          { id: "155", name: "Steward" },
+          { id: "156", name: "Welder" },
+          { id: "157", name: "Messman" },
         ]);
         setPosition("");
         break;
       case "3":
         setPositions([
-          { id: "138", name: "NCV Master" },
-          { id: "139", name: "NCV Mate" },
-          { id: "140", name: "NWKO/2nd Officer" },
-          { id: "141", name: "NCV Chief Engineer" },
-          { id: "142", name: "NCV 2nd Engineer" },
+          { id: "158", name: "NCV Master" },
+          { id: "159", name: "NCV Mate (Chief Officer)" },
+          { id: "160", name: "NCV Second Mate" },
+          { id: "161", name: "NCV Third Mate" },
+          { id: "162", name: "Junior Officer" },
+          { id: "163", name: "NCV Chief Engineer" },
+          { id: "164", name: "NCV Second Engineer" },
+          { id: "165", name: "NCV Third Engineer" },
+          { id: "166", name: "NCV Fourth Engineer" },
         ]);
         setPosition("");
         break;
       case "4":
         setPositions([
-          { id: "143", name: "Chief Officer " },
-          { id: "144", name: "2nd Officer" },
-          { id: "145", name: "3rd Officer " },
-          { id: "146", name: "Deck Cadet" },
-          { id: "147", name: "Able - Bodied Seaman(ABs)" },
-          { id: "148", name: "Bosun" },
-          { id: "149", name: "Ordinary Seaman(OS)" },
-          { id: "150", name: "Chief Engineer " },
-          { id: "151", name: "2nd Engineer" },
-          { id: "152", name: "3rd Engineer" },
-          { id: "153", name: "4th Engineer" },
-          { id: "154", name: "Electrical Officer (ETO)" },
-          { id: "155", name: "Wiper" },
-          { id: "156", name: "Fitter" },
-          { id: "157", name: "Cook" },
-          { id: "158", name: "Welder" },
-          { id: "159", name: "Messman" },
-          { id: "160", name: "Motorman" },
+          { id: "167", name: "Captain (Master)" },
+          { id: "168", name: "Chief Officer (Chief Mate)" },
+          { id: "169", name: "Second Officer (Second Mate)" },
+          { id: "170", name: "Third Officer (Third Mate)" },
+          { id: "171", name: "Junior Officer" },
+          { id: "172", name: "Deck Cadet" },
+          { id: "173", name: "Chief Engineer" },
+          { id: "174", name: "Second Engineer" },
+          { id: "175", name: "Third Engineer" },
+          { id: "176", name: "Fourth Engineer" },
+          { id: "177", name: "TME" },
+          { id: "178", name: "Electrical Officer (EO)" },
+          { id: "179", name: "Electo-Technical Officer (ETO)" },
+          { id: "180", name: "Bosun" },
+          { id: "181", name: "Able Seaman(AB)" },
+          { id: "182", name: "Ordinary Seaman(OS)" },
+          { id: "183", name: "Trainee OS" },
+          { id: "184", name: "Fitter" },
+          { id: "185", name: "Motorman/Oiler" },
+          { id: "186", name: "Wiper" },
+          { id: "187", name: "Pumpman" },
+          { id: "188", name: "Chief Cook" },
+          { id: "189", name: "Second Cook" },
+          { id: "190", name: "Trainee Cook" },
+          { id: "191", name: "General Steward" },
+          { id: "192", name: "Steward" },
+          { id: "193", name: "Welder" },
+          { id: "194", name: "Messman" },
         ]);
         setPosition("");
         break;
 
       // case "5":
       //   setPositions([
-      //     "Chief Officer ",
-      //     "2nd Officer",
-      //     "3rd Officer ",
-      //     "Deck Cadet",
-      //     "Able - Bodied Seaman(ABs)",
-      //     "Bosun",
-      //     "Ordinary Seaman(OS)",
-      //     "Chief Engineer ",
-      //     "2nd Engineer",
-      //     "3rd Engineer",
-      //     "4th Engineer",
-      //     "Electrical Officer (ETO)",
+      //     { id: "", name: "" },
       //   ]);
       //   setPosition("");
       //   break;
 
-
-      
-      case "5":
-        setPositions([
-          { id: "161", name: "Chief Officer " },
-          { id: "162", name: "2nd Officer" },
-          { id: "163", name: "3rd Officer " },
-          { id: "164", name: "Deck Cadet" },
-          { id: "165", name: "Able - Bodied Seaman(ABs)" },
-          { id: "166", name: "Bosun" },
-          { id: "167", name: "Ordinary Seaman(OS)" },
-          { id: "168", name: "Chief Engineer " },
-          { id: "169", name: "2nd Engineer" },
-          { id: "170", name: "3rd Engineer" },
-          { id: "171", name: "4th Engineer" },
-          { id: "172", name: "Electrical Officer (ETO)" },
-          { id: "173", name: "Wiper" },
-          { id: "174", name: "Fitter" },
-          { id: "175", name: "Cook" },
-          { id: "176", name: "Welder" },
-          { id: "177", name: "Messman" },
-          { id: "178", name: "Motorman" },
-        ]);
-        setPosition("");
-        break;
       case "6":
         setPositions([
-          { id: "179", name: "Chief Officer " },
-          { id: "180", name: "2nd Officer" },
-          { id: "181", name: "3rd Officer " },
-          { id: "182", name: "Deck Cadet" },
-          { id: "183", name: "Able - Bodied Seaman(ABs)" },
-          { id: "184", name: "Bosun" },
-          { id: "185", name: "Ordinary Seaman(OS)" },
-          { id: "186", name: "Chief Engineer " },
-          { id: "187", name: "2nd Engineer" },
-          { id: "188", name: "3rd Engineer" },
-          { id: "189", name: "4th Engineer" },
-          { id: "190", name: "Electrical Officer (ETO)" },
-          { id: "191", name: "Wiper" },
-          { id: "192", name: "Fitter" },
-          { id: "193", name: "Cook" },
-          { id: "194", name: "Welder" },
-          { id: "195", name: "Messman" },
-          { id: "196", name: "Motorman" },
+          { id: "195", name: "Captain (Master)" },
+          { id: "196", name: "Chief Officer (Chief Mate)" },
+          { id: "197", name: "Second Officer (Second Mate)" },
+          { id: "198", name: "Third Officer (Third Mate)" },
+          { id: "199", name: "Junior Officer" },
+          { id: "200", name: "Deck Cadet" },
+          { id: "201", name: "Chief Engineer" },
+          { id: "202", name: "Second Engineer" },
+          { id: "203", name: "Third Engineer" },
+          { id: "204", name: "Fourth Engineer" },
+          { id: "205", name: "TME" },
+          { id: "206", name: "Electrical Officer (EO)" },
+          { id: "207", name: "Electo-Technical Officer (ETO)" },
+          { id: "208", name: "Bosun" },
+          { id: "209", name: "Able Seaman(AB)" },
+          { id: "210", name: "Ordinary Seaman(OS)" },
+          { id: "211", name: "Trainee OS" },
+          { id: "212", name: "Fitter" },
+          { id: "213", name: "Motorman/Oiler" },
+          { id: "214", name: "Wiper" },
+          { id: "215", name: "Pumpman" },
+          { id: "216", name: "Chief Cook" },
+          { id: "217", name: "Second Cook" },
+          { id: "218", name: "Trainee Cook" },
+          { id: "219", name: "General Steward" },
+          { id: "220", name: "Steward" },
+          { id: "221", name: "Welder" },
+          { id: "222", name: "Messman" },
         ]);
         setPosition("");
         break;
       case "7":
         setPositions([
-          { id: "197", name: "Chief Officer " },
-          { id: "198", name: "2nd Officer" },
-          { id: "199", name: "3rd Officer " },
-          { id: "200", name: "Deck Cadet" },
-          { id: "201", name: "Able - Bodied Seaman(ABs)" },
-          { id: "202", name: "Bosun" },
-          { id: "203", name: "Ordinary Seaman(OS)" },
-          { id: "204", name: "Chief Engineer " },
-          { id: "205", name: "2nd Engineer" },
-          { id: "206", name: "3rd Engineer" },
-          { id: "207", name: "4th Engineer" },
-          { id: "208", name: "Electrical Officer (ETO)" },
-          { id: "209", name: "Wiper" },
-          { id: "210", name: "Fitter" },
-          { id: "211", name: "Cook" },
-          { id: "212", name: "Welder" },
-          { id: "213", name: "Messman" },
-          { id: "214", name: "Motorman" },
+          { id: "223", name: "Captain (Master)" },
+          { id: "224", name: "Chief Officer (Chief Mate)" },
+          { id: "225", name: "Second Officer (Second Mate)" },
+          { id: "226", name: "Third Officer (Third Mate)" },
+          { id: "227", name: "Junior Officer" },
+          { id: "228", name: "Deck Cadet" },
+          { id: "229", name: "Chief Engineer" },
+          { id: "230", name: "Second Engineer" },
+          { id: "231", name: "Third Engineer" },
+          { id: "232", name: "Fourth Engineer" },
+          { id: "233", name: "TME" },
+          { id: "234", name: "Electrical Officer (EO)" },
+          { id: "235", name: "Electo-Technical Officer (ETO)" },
+          { id: "236", name: "Bosun" },
+          { id: "237", name: "Able Seaman(AB)" },
+          { id: "238", name: "Ordinary Seaman(OS)" },
+          { id: "239", name: "Trainee OS" },
+          { id: "240", name: "Fitter" },
+          { id: "241", name: "Motorman/Oiler" },
+          { id: "242", name: "Wiper" },
+          { id: "243", name: "Pumpman" },
+          { id: "244", name: "Chief Cook" },
+          { id: "245", name: "Second Cook" },
+          { id: "246", name: "Trainee Cook" },
+          { id: "247", name: "General Steward" },
+          { id: "248", name: "Steward" },
+          { id: "249", name: "Welder" },
+          { id: "250", name: "Messman" },
         ]);
         setPosition("");
         break;
 
       case "8":
         setPositions([
-          { id: "215", name: "Chief Officer " },
-          { id: "216", name: "2nd Officer" },
-          { id: "217", name: "3rd Officer " },
-          { id: "218", name: "Deck Cadet" },
-          { id: "219", name: "Able - Bodied Seaman(ABs)" },
-          { id: "220", name: "Bosun" },
-          { id: "221", name: "Ordinary Seaman(OS)" },
-          { id: "222", name: "Chief Engineer " },
-          { id: "223", name: "2nd Engineer" },
-          { id: "224", name: "3rd Engineer" },
-          { id: "225", name: "4th Engineer" },
-          { id: "226", name: "Electrical Officer (ETO)" },
-          { id: "227", name: "Wiper" },
-          { id: "228", name: "Fitter" },
-          { id: "229", name: "Cook" },
-          { id: "230", name: "Welder" },
-          { id: "231", name: "Messman" },
-          { id: "232", name: "Motorman" },
+          { id: "251", name: "Captain (Master)" },
+          { id: "252", name: "Chief Officer (Chief Mate)" },
+          { id: "253", name: "Second Officer (Second Mate)" },
+          { id: "254", name: "Third Officer (Third Mate)" },
+          { id: "255", name: "Junior Officer" },
+          { id: "256", name: "Deck Cadet" },
+          { id: "257", name: "Chief Engineer" },
+          { id: "258", name: "Second Engineer" },
+          { id: "259", name: "Third Engineer" },
+          { id: "260", name: "Fourth Engineer" },
+          { id: "261", name: "TME" },
+          { id: "262", name: "Electrical Officer (EO)" },
+          { id: "263", name: "Electo-Technical Officer (ETO)" },
+          { id: "264", name: "Bosun" },
+          { id: "265", name: "Able Seaman(AB)" },
+          { id: "266", name: "Ordinary Seaman(OS)" },
+          { id: "267", name: "Trainee OS" },
+          { id: "268", name: "Fitter" },
+          { id: "269", name: "Motorman/Oiler" },
+          { id: "270", name: "Wiper" },
+          { id: "271", name: "Pumpman" },
+          { id: "272", name: "Chief Cook" },
+          { id: "273", name: "Second Cook" },
+          { id: "274", name: "Trainee Cook" },
+          { id: "275", name: "General Steward" },
+          { id: "276", name: "Steward" },
+          { id: "277", name: "Welder" },
+          { id: "278", name: "Messman" },
         ]);
         setPosition("");
         break;
+
+      case "9":
+        setPositions([
+          { id: "279", name: "Captain (Master)" },
+          { id: "280", name: "Chief Officer (Chief Mate)" },
+          { id: "281", name: "Second Officer (Second Mate)" },
+          { id: "282", name: "Third Officer (Third Mate)" },
+          { id: "283", name: "Junior Officer" },
+          { id: "284", name: "Deck Cadet" },
+          { id: "285", name: "Chief Engineer" },
+          { id: "286", name: "Second Engineer" },
+          { id: "287", name: "Third Engineer" },
+          { id: "288", name: "Fourth Engineer" },
+          { id: "289", name: "TME" },
+          { id: "290", name: "Electrical Officer (EO)" },
+          { id: "291", name: "Electo-Technical Officer (ETO)" },
+          { id: "292", name: "Bosun" },
+          { id: "293", name: "Able Seaman(AB)" },
+          { id: "294", name: "Ordinary Seaman(OS)" },
+          { id: "295", name: "Trainee OS" },
+          { id: "296", name: "Fitter" },
+          { id: "297", name: "Motorman/Oiler" },
+          { id: "298", name: "Wiper" },
+          { id: "299", name: "Pumpman" },
+          { id: "300", name: "Chief Cook" },
+          { id: "301", name: "Second Cook" },
+          { id: "302", name: "Trainee Cook" },
+          { id: "303", name: "General Steward" },
+          { id: "304", name: "Steward" },
+          { id: "305", name: "Welder" },
+          { id: "306", name: "Messman" },
+        ]);
 
       // Add more cases as needed
       default:
@@ -318,8 +378,6 @@ const CareerForm = ({ subject }) => {
     setNewPositions([]);
     setIsNewPositionDisabled(true);
   };
-
-
 
   const handlePositionChange = (e) => {
     const positionId = e.target.value;
@@ -333,663 +391,1028 @@ const CareerForm = ({ subject }) => {
     setIsNewPositionDisabled(positionId === "");
     // Set new positions based on the position
     switch (positionId) {
-      //  case "1": 101-119
-
+      //  case "1":
       case "101":
         setNewPositions([{ id: "201", name: "Gas Engineer" }]);
         break;
       case "102":
-        setNewPositions([
-          { id: "202", name: "Captain (Master)" },
-          { id: "203", name: "Chief Officer (Chief Mate)" },
-        ]);
+        setNewPositions([{ id: "202", name: "Captain (Master)" }]);
         break;
       case "103":
         setNewPositions([
+          { id: "203", name: "Captain (Master)" },
           { id: "204", name: "Chief Officer (Chief Mate)" },
-          { id: "205", name: "2nd Officer" },
         ]);
         break;
       case "104":
         setNewPositions([
-          { id: "206", name: "2nd Officer (Second Mate)" },
-          { id: "207", name: "3rd Officer (Third Mate)" },
+          { id: "205", name: "Chief Officer (Chief Mate)" },
+          { id: "206", name: "Second Officer (Second Mate)" },
         ]);
         break;
       case "105":
         setNewPositions([
-          { id: "208", name: "Junior Officer" },
-          { id: "209", name: "Deck Cadet" },
+          { id: "207", name: "Second Officer (Second Mate)" },
+          { id: "208", name: "Third Officer (Third Mate)" },
         ]);
         break;
       case "106":
         setNewPositions([
-          { id: "210", name: "Bosun" },
-          { id: "211", name: "Able Seaman (AB)" },
+          { id: "209", name: "Third Officer (Third Mate)" },
+          { id: "210", name: "Junior Officer" },
         ]);
         break;
       case "107":
-        setNewPositions([{ id: "212", name: "Bosun" }]);
+        setNewPositions([
+          { id: "211", name: "Junior Officer" },
+          { id: "212", name: "Deck Cadet" },
+        ]);
         break;
       case "108":
         setNewPositions([
-          { id: "213", name: "Able Seaman (AB)" },
-          { id: "214", name: "Ordinary Seaman (OS)" },
+          { id: "213", name: "Captain (Master)" },
+          { id: "214", name: "Chief Engineer" },
         ]);
         break;
       case "109":
         setNewPositions([
-          { id: "215", name: "Captain (Master)" },
-          { id: "216", name: "Chief Engineer" },
+          { id: "215", name: "Chief Engineer" },
+          { id: "216", name: "Second Engineer" },
         ]);
         break;
       case "110":
         setNewPositions([
-          { id: "217", name: "Chief Engineer" },
-          { id: "218", name: "2nd Engineer" },
+          { id: "217", name: "Second Engineer" },
+          { id: "218", name: "Third Engineer" },
         ]);
         break;
       case "111":
         setNewPositions([
-          { id: "219", name: "2nd Engineer" },
-          { id: "220", name: "3rd Engineer" },
+          { id: "219", name: "Third Engineer" },
+          { id: "220", name: "Fourth Engineer" },
         ]);
         break;
       case "112":
-        setNewPositions([
-          { id: "221", name: "3rd Engineer" },
-          { id: "222", name: "4th Engineer" },
-        ]);
+        setNewPositions([{ id: "221", name: "TME" }]);
         break;
       case "113":
         setNewPositions([
-          { id: "223", name: "Second Engineer" },
-          { id: "224", name: "Electrical Officer (ETO)" },
+          { id: "222", name: "Second Engineer" },
+          { id: "223", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "114":
-        setNewPositions([{ id: "225", name: "Wiper" }]);
+        setNewPositions([
+          { id: "224", name: "Electrical Officer (EO)" },
+          { id: "225", name: "Electro-Technical Officer (ETO)" },
+        ]);
         break;
       case "115":
-        setNewPositions([{ id: "226", name: "Fitter" }]);
+        setNewPositions([{ id: "226", name: "Bosun" }]);
         break;
       case "116":
-        setNewPositions([{ id: "227", name: "Cook" }]);
+        setNewPositions([
+          { id: "227", name: "Bosun" },
+          { id: "228", name: "Able Seaman (AB)" },
+        ]);
         break;
       case "117":
-        setNewPositions([{ id: "228", name: "Welder" }]);
+        setNewPositions([
+          { id: "229", name: "Able Seaman (AB)" },
+          { id: "230", name: "Ordinary Seaman (OS)" },
+        ]);
         break;
       case "118":
-        setNewPositions([{ id: "229", name: "Messman" }]);
+        setNewPositions([
+          { id: "231", name: "Ordinary Seaman (OS)" },
+          { id: "232", name: "Trainee OS" },
+        ]);
         break;
       case "119":
-        setNewPositions([{ id: "230", name: "Motorman" }]);
+        setNewPositions([{ id: "233", name: "Fitter" }]);
         break;
-
-      //  case "2": 120-137
       case "120":
-        setNewPositions([
-          { id: "231", name: "Captain (Master)" },
-          { id: "232", name: "Chief Officer (Chief Mate)" },
-        ]);
+        setNewPositions([{ id: "234", name: "Motorman/Oiler" }]);
         break;
       case "121":
-        setNewPositions([
-          { id: "233", name: "Chief Officer (Chief Mate)" },
-          { id: "234", name: "2nd Officer" },
-        ]);
+        setNewPositions([{ id: "235", name: "Wiper" }]);
         break;
       case "122":
-        setNewPositions([
-          { id: "235", name: "2nd Officer (Second Mate)" },
-          { id: "236", name: "3rd Officer (Third Mate)" },
-        ]);
+        setNewPositions([{ id: "236", name: "Pumpman" }]);
         break;
       case "123":
-        setNewPositions([
-          { id: "237", name: "Junior Officer" },
-          { id: "238", name: "Deck Cadet" },
-        ]);
+        setNewPositions([{ id: "237", name: "Second Cook" }]);
         break;
       case "124":
         setNewPositions([
-          { id: "239", name: "Bosun" },
-          { id: "240", name: "Able Seaman (AB)" },
+          { id: "238", name: "Chief Cook" },
+          { id: "239", name: "Second Cook" },
         ]);
         break;
       case "125":
-        setNewPositions([{ id: "241", name: "Bosun" }]);
+        setNewPositions([
+          { id: "240", name: "Second Cook" },
+          { id: "241", name: "Trainee Cook" },
+        ]);
         break;
       case "126":
-        setNewPositions([
-          { id: "242", name: "Able Seaman (AB)" },
-          { id: "243", name: "Ordinary Seaman (OS)" },
-        ]);
+        setNewPositions([{ id: "242", name: "General Steward" }]);
         break;
       case "127":
         setNewPositions([
-          { id: "244", name: "Captain (Master)" },
-          { id: "245", name: "Chief Engineer" },
+          { id: "243", name: "Ordinary Seaman (OS)" },
+          { id: "244", name: "Steward" },
         ]);
         break;
       case "128":
-        setNewPositions([
-          { id: "246", name: "Chief Engineer" },
-          { id: "247", name: "2nd Engineer" },
-        ]);
+        setNewPositions([{ id: "245", name: "Welder" }]);
         break;
       case "129":
-        setNewPositions([
-          { id: "248", name: "2nd Engineer" },
-          { id: "249", name: "3rd Engineer" },
-        ]);
+        setNewPositions([{ id: "246", name: "Messman" }]);
         break;
-      case "130":
-        setNewPositions([
-          { id: "250", name: "3rd Engineer" },
-          { id: "251", name: "4th Engineer" },
-        ]);
+      default:
+        setNewPositions([]);
         break;
 
+      //  case "2":
+
+      case "130":
+        setNewPositions([{ id: "247", name: "Captain (Master)" }]);
+        break;
       case "131":
         setNewPositions([
-          { id: "252", name: "Second Engineer" },
-          { id: "253", name: "Electrical Officer (ETO)" },
+          { id: "248", name: "Captain (Master)" },
+          { id: "249", name: "Chief Officer (Chief Mate)" },
         ]);
         break;
       case "132":
-        setNewPositions([{ id: "254", name: "Wiper" }]);
+        setNewPositions([
+          { id: "250", name: "Chief Officer (Chief Mate)" },
+          { id: "251", name: "Second Officer (Second Mate)" },
+        ]);
         break;
       case "133":
-        setNewPositions([{ id: "255", name: "Fitter" }]);
+        setNewPositions([
+          { id: "252", name: "Second Officer (Second Mate)" },
+          { id: "253", name: "Third Officer (Third Mate)" },
+        ]);
         break;
       case "134":
-        setNewPositions([{ id: "256", name: "Cook" }]);
+        setNewPositions([
+          { id: "254", name: "Third Officer (Third Mate)" },
+          { id: "255", name: "Junior Officer" },
+        ]);
         break;
       case "135":
-        setNewPositions([{ id: "257", name: "Welder" }]);
+        setNewPositions([
+          { id: "256", name: "Junior Officer" },
+          { id: "257", name: "Deck Cadet" },
+        ]);
         break;
       case "136":
-        setNewPositions([{ id: "258", name: "Messman" }]);
+        setNewPositions([
+          { id: "258", name: "Captain (Master)" },
+          { id: "259", name: "Chief Engineer" },
+        ]);
         break;
       case "137":
-        setNewPositions([{ id: "259", name: "Motorman" }]);
+        setNewPositions([
+          { id: "260", name: "Chief Engineer" },
+          { id: "261", name: "Second Engineer" },
+        ]);
         break;
-
-      // case "3":138-142
       case "138":
-        setNewPositions([{ id: "260", name: "NCV Master" }]);
+        setNewPositions([
+          { id: "262", name: "Second Engineer" },
+          { id: "263", name: "Third Engineer" },
+        ]);
         break;
       case "139":
         setNewPositions([
-          { id: "261", name: "NCV Master" },
-          { id: "262", name: "NCV Mate (Chief Officer)" },
+          { id: "264", name: "Third Engineer" },
+          { id: "265", name: "Fourth Engineer" },
         ]);
         break;
       case "140":
-        setNewPositions([
-          { id: "413", name: "NCV Mate" }, // New Update..
-          { id: "263", name: "NWKO/2nd Officer" },
-        ]);
+        setNewPositions([{ id: "266", name: "TME" }]);
         break;
       case "141":
         setNewPositions([
-          { id: "264", name: "NCV Master" },
-          { id: "265", name: "NCV Chief Engineer" },
+          { id: "267", name: "Second Engineer" },
+          { id: "268", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "142":
         setNewPositions([
-          { id: "266", name: "NCV Chief Engineer" },
-          { id: "267", name: "NCV 2nd Engineer" },
+          { id: "269", name: "Electrical Officer (EO)" },
+          { id: "270", name: "Electro-Technical Officer (ETO)" },
         ]);
         break;
-
-      // case "4": 143-160
-
       case "143":
-        setNewPositions([
-          { id: "268", name: "Captain (Master)" },
-          { id: "269", name: "Chief Officer (Chief Mate)" },
-        ]);
+        setNewPositions([{ id: "271", name: "Bosun" }]);
         break;
       case "144":
         setNewPositions([
-          { id: "270", name: "Chief Officer (Chief Mate)" },
-          { id: "271", name: "2nd Officer" },
+          { id: "272", name: "Bosun" },
+          { id: "273", name: "Able Seaman (AB)" },
         ]);
         break;
       case "145":
         setNewPositions([
-          { id: "272", name: "2nd Officer (Second Mate)" },
-          { id: "273", name: "3rd Officer (Third Mate)" },
+          { id: "274", name: "Able Seaman (AB)" },
+          { id: "275", name: "Ordinary Seaman (OS)" },
         ]);
         break;
       case "146":
         setNewPositions([
-          { id: "274", name: "Junior Officer" },
-          { id: "275", name: "Deck Cadet" },
+          { id: "276", name: "Ordinary Seaman (OS)" },
+          { id: "277", name: "Trainee OS" },
         ]);
         break;
       case "147":
-        setNewPositions([
-          { id: "276", name: "Bosun" },
-          { id: "277", name: "Able Seaman (AB)" },
-        ]);
+        setNewPositions([{ id: "278", name: "Fitter" }]);
         break;
       case "148":
-        setNewPositions([{ id: "278", name: "Bosun" }]);
+        setNewPositions([{ id: "279", name: "Motorman/Oiler" }]);
         break;
       case "149":
-        setNewPositions([
-          { id: "279", name: "Able Seaman (AB)" },
-          { id: "280", name: "Ordinary Seaman (OS)" },
-        ]);
+        setNewPositions([{ id: "280", name: "Wiper" }]);
         break;
       case "150":
-        setNewPositions([
-          { id: "281", name: "Captain (Master)" },
-          { id: "282", name: "Chief Engineer" },
-        ]);
+        setNewPositions([{ id: "281", name: "Pumpman" }]);
         break;
       case "151":
-        setNewPositions([
-          { id: "283", name: "Chief Engineer" },
-          { id: "284", name: "2nd Engineer" },
-        ]);
+        setNewPositions([{ id: "282", name: "Second Cook" }]);
         break;
       case "152":
         setNewPositions([
-          { id: "285", name: "2nd Engineer" },
-          { id: "286", name: "3rd Engineer" },
+          { id: "283", name: "Chief Cook" },
+          { id: "284", name: "Second Cook" },
         ]);
         break;
       case "153":
         setNewPositions([
-          { id: "287", name: "3rd Engineer" },
-          { id: "288", name: "4th Engineer" },
+          { id: "285", name: "Second Cook" },
+          { id: "286", name: "Trainee Cook" },
         ]);
         break;
       case "154":
-        setNewPositions([
-          { id: "289", name: "Second Engineer" },
-          { id: "290", name: "Electrical Officer (ETO)" },
-        ]);
+        setNewPositions([{ id: "287", name: "General Steward" }]);
         break;
       case "155":
-        setNewPositions([{ id: "291", name: "Wiper" }]);
+        setNewPositions([
+          { id: "288", name: "Ordinary Seaman (OS)" },
+          { id: "289", name: "Steward" },
+        ]);
         break;
       case "156":
-        setNewPositions([{ id: "292", name: "Fitter" }]);
+        setNewPositions([{ id: "290", name: "Welder" }]);
         break;
       case "157":
-        setNewPositions([{ id: "293", name: "Cook" }]);
-
+        setNewPositions([{ id: "291", name: "Messman" }]);
         break;
+
+      // case "3":
       case "158":
-        setNewPositions([{ id: "294", name: "Welder" }]);
+        setNewPositions([{ id: "292", name: "NCV Master" }]);
         break;
       case "159":
-        setNewPositions([{ id: "295", name: "Messman" }]);
+        setNewPositions([
+          { id: "293", name: "NCV Master" },
+          { id: "294", name: "NCV Mate (Chief Officer)" },
+        ]);
         break;
       case "160":
-        setNewPositions([{ id: "296", name: "Motorman" }]);
+        setNewPositions([
+          { id: "295", name: "NCV Mate (Chief Officer)" },
+          { id: "296", name: "NCV Second Mate" },
+        ]);
         break;
-
-      // case "5":161-178
       case "161":
         setNewPositions([
-          { id: "297", name: "Captain (Master)" },
-          { id: "298", name: "Chief Officer (Chief Mate)" },
+          { id: "297", name: "NCV Second Mate" },
+          { id: "298", name: "NCV Third Mate" },
         ]);
         break;
       case "162":
         setNewPositions([
-          { id: "299", name: "Chief Officer (Chief Mate)" },
-          { id: "300", name: "2nd Officer" },
+          { id: "299", name: "NCV Third Mate" },
+          { id: "300", name: "Junior Officer" },
         ]);
         break;
       case "163":
         setNewPositions([
-          { id: "301", name: "2nd Officer (Second Mate)" },
-          { id: "302", name: "3rd Officer (Third Mate)" },
+          { id: "301", name: "NCV Mate" },
+          { id: "302", name: "NCV Chief Engineer" },
         ]);
         break;
       case "164":
         setNewPositions([
-          { id: "303", name: "Junior Officer" },
-          { id: "304", name: "Deck Cadet" },
+          { id: "303", name: "NCV Chief Engineer" },
+          { id: "304", name: "NCV Second Engineer" },
         ]);
         break;
       case "165":
         setNewPositions([
-          { id: "305", name: "Bosun" },
-          { id: "306", name: "Able Seaman (AB)" },
+          { id: "305", name: "NCV Second Engineer" },
+          { id: "306", name: "NCV Third Engineer" },
         ]);
         break;
       case "166":
-        setNewPositions([{ id: "307", name: "Bosun" }]);
-        break;
-      case "167":
         setNewPositions([
-          { id: "308", name: "Able Seaman (AB)" },
-          { id: "309", name: "Ordinary Seaman (OS)" },
+          { id: "307", name: "NCV Third Engineer" },
+          { id: "308", name: "NCV Fourth Engineer" },
         ]);
+        break;
+
+      // case "4":
+
+      case "167":
+        setNewPositions([{ id: "309", name: "Captain (Master)" }]);
         break;
       case "168":
         setNewPositions([
           { id: "310", name: "Captain (Master)" },
-          { id: "311", name: "Chief Engineer" },
+          { id: "311", name: "Chief Officer (Chief Mate)" },
         ]);
         break;
       case "169":
         setNewPositions([
-          { id: "312", name: "Chief Engineer" },
-          { id: "313", name: "2nd Engineer" },
+          { id: "312", name: "Chief Officer (Chief Mate)" },
+          { id: "313", name: "Second Officer (Second Mate)" },
         ]);
         break;
       case "170":
         setNewPositions([
-          { id: "314", name: "2nd Engineer" },
-          { id: "315", name: "3rd Engineer" },
+          { id: "314", name: "Second Officer (Second Mate)" },
+          { id: "315", name: "Third Officer (Third Mate)" },
         ]);
         break;
       case "171":
         setNewPositions([
-          { id: "316", name: "3rd Engineer" },
-          { id: "317", name: "4th Engineer" },
+          { id: "316", name: "Third Officer (Third Mate)" },
+          { id: "317", name: "Junior Officer" },
         ]);
         break;
       case "172":
         setNewPositions([
-          { id: "318", name: "Second Engineer" },
-          { id: "319", name: "Electrical Officer (ETO)" },
+          { id: "318", name: "Junior Officer" },
+          { id: "319", name: "Deck Cadet" },
         ]);
         break;
       case "173":
-        setNewPositions([{ id: "320", name: "Wiper" }]);
+        setNewPositions([
+          { id: "320", name: "Captain (Master)" },
+          { id: "321", name: "Chief Engineer" },
+        ]);
         break;
       case "174":
-        setNewPositions([{ id: "321", name: "Fitter" }]);
+        setNewPositions([
+          { id: "322", name: "Chief Engineer" },
+          { id: "323", name: "Second Engineer" },
+        ]);
         break;
       case "175":
-        setNewPositions([{ id: "322", name: "Cook" }]);
+        setNewPositions([
+          { id: "324", name: "Second Engineer" },
+          { id: "325", name: "Third Engineer" },
+        ]);
         break;
       case "176":
-        setNewPositions([{ id: "323", name: "Welder" }]);
+        setNewPositions([
+          { id: "326", name: "Third Engineer" },
+          { id: "327", name: "Fourth Engineer" },
+        ]);
         break;
       case "177":
-        setNewPositions([{ id: "324", name: "Messman" }]);
+        setNewPositions([{ id: "328", name: "TME" }]);
         break;
       case "178":
-        setNewPositions([{ id: "325", name: "Motorman" }]);
+        setNewPositions([
+          { id: "329", name: "Second Engineer" },
+          { id: "330", name: "Electrical Officer (EO)" },
+        ]);
         break;
-
-      //case "6" 179- 196
       case "179":
         setNewPositions([
-          { id: "326", name: "Captain (Master)" },
-          { id: "327", name: "Chief Officer (Chief Mate)" },
+          { id: "331", name: "Electrical Officer (EO)" },
+          { id: "332", name: "Electro-Technical Officer (ETO)" },
         ]);
         break;
       case "180":
-        setNewPositions([
-          { id: "328", name: "Chief Officer (Chief Mate)" },
-          { id: "329", name: "2nd Officer" },
-        ]);
+        setNewPositions([{ id: "333", name: "Bosun" }]);
         break;
       case "181":
-        setNewPositions([
-          { id: "330", name: "2nd Officer (Second Mate)" },
-          { id: "331", name: "3rd Officer (Third Mate)" },
-        ]);
-        break;
-      case "182":
-        setNewPositions([
-          { id: "332", name: "Junior Officer" },
-          { id: "333", name: "Deck Cadet" },
-        ]);
-        break;
-      case "183":
         setNewPositions([
           { id: "334", name: "Bosun" },
           { id: "335", name: "Able Seaman (AB)" },
         ]);
         break;
+      case "182":
+        setNewPositions([
+          { id: "336", name: "Able Seaman (AB)" },
+          { id: "337", name: "Ordinary Seaman (OS)" },
+        ]);
+        break;
+      case "183":
+        setNewPositions([
+          { id: "338", name: "Ordinary Seaman (OS)" },
+          { id: "339", name: "Trainee OS" },
+        ]);
+        break;
       case "184":
-        setNewPositions([{ id: "336", name: "Bosun" }]);
+        setNewPositions([{ id: "340", name: "Fitter" }]);
         break;
       case "185":
-        setNewPositions([
-          { id: "337", name: "Able Seaman (AB)" },
-          { id: "338", name: "Ordinary Seaman (OS)" },
-        ]);
+        setNewPositions([{ id: "341", name: "Motorman/Oiler" }]);
         break;
       case "186":
-        setNewPositions([
-          { id: "339", name: "Captain (Master)" },
-          { id: "340", name: "Chief Engineer" },
-        ]);
+        setNewPositions([{ id: "342", name: "Wiper" }]);
         break;
       case "187":
-        setNewPositions([
-          { id: "341", name: "Chief Engineer" },
-          { id: "342", name: "2nd Engineer" },
-        ]);
+        setNewPositions([{ id: "343", name: "Pumpman" }]);
         break;
       case "188":
-        setNewPositions([
-          { id: "343", name: "2nd Engineer" },
-          { id: "344", name: "3rd Engineer" },
-        ]);
+        setNewPositions([{ id: "344", name: "Second Cook" }]);
         break;
       case "189":
         setNewPositions([
-          { id: "345", name: "3rd Engineer" },
-          { id: "346", name: "4th Engineer" },
+          { id: "345", name: "Chief Cook" },
+          { id: "346", name: "Second Cook" },
         ]);
         break;
       case "190":
         setNewPositions([
-          { id: "347", name: "Second Engineer" },
-          { id: "348", name: "Electrical Officer (ETO)" },
+          { id: "347", name: "Second Cook" },
+          { id: "348", name: "Trainee Cook" },
         ]);
         break;
       case "191":
-        setNewPositions([{ id: "349", name: "Wiper" }]);
+        setNewPositions([{ id: "349", name: "General Steward" }]);
         break;
       case "192":
-        setNewPositions([{ id: "350", name: "Fitter" }]);
+        setNewPositions([
+          { id: "350", name: "Ordinary Seaman (OS)" },
+          { id: "351", name: "Steward" },
+        ]);
         break;
       case "193":
-        setNewPositions([{ id: "351", name: "Cook" }]);
-        break;
-      case "194":
         setNewPositions([{ id: "352", name: "Welder" }]);
         break;
-      case "195":
+      case "194":
         setNewPositions([{ id: "353", name: "Messman" }]);
         break;
-      case "196":
-        setNewPositions([{ id: "354", name: "Motorman" }]);
-        break;
 
-      // case "7": 197-214
-      case "197":
+      // case "5":
+
+      case "195":
+        setNewPositions([{ id: "354", name: "Captain (Master)" }]);
+        break;
+      case "196":
         setNewPositions([
           { id: "355", name: "Captain (Master)" },
           { id: "356", name: "Chief Officer (Chief Mate)" },
         ]);
         break;
-      case "198":
+      case "197":
         setNewPositions([
           { id: "357", name: "Chief Officer (Chief Mate)" },
-          { id: "358", name: "2nd Officer" },
+          { id: "358", name: "Second Officer (Second Mate)" },
+        ]);
+        break;
+      case "198":
+        setNewPositions([
+          { id: "359", name: "Second Officer (Second Mate)" },
+          { id: "360", name: "Third Officer (Third Mate)" },
         ]);
         break;
       case "199":
         setNewPositions([
-          { id: "359", name: "2nd Officer (Second Mate)" },
-          { id: "360", name: "3rd Officer (Third Mate)" },
+          { id: "361", name: "Third Officer (Third Mate)" },
+          { id: "362", name: "Junior Officer" },
         ]);
         break;
       case "200":
         setNewPositions([
-          { id: "361", name: "Junior Officer" },
-          { id: "362", name: "Deck Cadet" },
+          { id: "363", name: "Junior Officer" },
+          { id: "364", name: "Deck Cadet" },
         ]);
         break;
       case "201":
         setNewPositions([
-          { id: "363", name: "Bosun" },
-          { id: "364", name: "Able Seaman (AB)" },
+          { id: "365", name: "Captain (Master)" },
+          { id: "366", name: "Chief Engineer" },
         ]);
         break;
       case "202":
-        setNewPositions([{ id: "365", name: "Bosun" }]);
+        setNewPositions([
+          { id: "367", name: "Chief Engineer" },
+          { id: "368", name: "Second Engineer" },
+        ]);
         break;
       case "203":
         setNewPositions([
-          { id: "366", name: "Able Seaman (AB)" },
-          { id: "367", name: "Ordinary Seaman (OS)" },
+          { id: "369", name: "Second Engineer" },
+          { id: "370", name: "Third Engineer" },
         ]);
         break;
       case "204":
         setNewPositions([
-          { id: "368", name: "Captain (Master)" },
-          { id: "369", name: "Chief Engineer" },
+          { id: "371", name: "Third Engineer" },
+          { id: "372", name: "Fourth Engineer" },
         ]);
         break;
       case "205":
-        setNewPositions([
-          { id: "370", name: "Chief Engineer" },
-          { id: "371", name: "2nd Engineer" },
-        ]);
+        setNewPositions([{ id: "373", name: "TME" }]);
         break;
       case "206":
         setNewPositions([
-          { id: "372", name: "2nd Engineer" },
-          { id: "373", name: "3rd Engineer" },
+          { id: "374", name: "Second Engineer" },
+          { id: "375", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "207":
         setNewPositions([
-          { id: "374", name: "3rd Engineer" },
-          { id: "375", name: "4th Engineer" },
+          { id: "376", name: "Electrical Officer (EO)" },
+          { id: "377", name: "Electro-Technical Officer (ETO)" },
         ]);
         break;
       case "208":
-        setNewPositions([
-          { id: "376", name: "Second Engineer" },
-          { id: "377", name: "Electrical Officer (ETO)" },
-        ]);
+        setNewPositions([{ id: "378", name: "Bosun" }]);
         break;
       case "209":
-        setNewPositions([{ id: "378", name: "Wiper" }]);
+        setNewPositions([
+          { id: "379", name: "Bosun" },
+          { id: "380", name: "Able Seaman (AB)" },
+        ]);
         break;
       case "210":
-        setNewPositions([{ id: "379", name: "Fitter" }]);
+        setNewPositions([
+          { id: "381", name: "Able Seaman (AB)" },
+          { id: "382", name: "Ordinary Seaman (OS)" },
+        ]);
         break;
       case "211":
-        setNewPositions([{ id: "380", name: "Cook" }]);
+        setNewPositions([
+          { id: "383", name: "Ordinary Seaman (OS)" },
+          { id: "384", name: "Trainee OS" },
+        ]);
         break;
       case "212":
-        setNewPositions([{ id: "381", name: "Welder" }]);
+        setNewPositions([{ id: "385", name: "Fitter" }]);
         break;
       case "213":
-        setNewPositions([{ id: "382", name: "Messman" }]);
+        setNewPositions([{ id: "386", name: "Motorman/Oiler" }]);
         break;
       case "214":
-        setNewPositions([{ id: "383", name: "Motorman" }]);
+        setNewPositions([{ id: "387", name: "Wiper" }]);
         break;
-
-      // case "7": 197-214
       case "215":
-        setNewPositions([
-          { id: "384", name: "Captain (Master)" },
-          { id: "385", name: "Chief Officer (Chief Mate)" },
-        ]);
+        setNewPositions([{ id: "388", name: "Pumpman" }]);
         break;
       case "216":
-        setNewPositions([
-          { id: "386", name: "Chief Officer (Chief Mate)" },
-          { id: "387", name: "2nd Officer" },
-        ]);
+        setNewPositions([{ id: "389", name: "Second Cook" }]);
         break;
       case "217":
         setNewPositions([
-          { id: "388", name: "2nd Officer (Second Mate)" },
-          { id: "389", name: "3rd Officer (Third Mate)" },
+          { id: "390", name: "Chief Cook" },
+          { id: "391", name: "Second Cook" },
         ]);
         break;
       case "218":
         setNewPositions([
-          { id: "390", name: "Junior Officer" },
-          { id: "391", name: "Deck Cadet" },
+          { id: "392", name: "Second Cook" },
+          { id: "393", name: "Trainee Cook" },
         ]);
         break;
       case "219":
-        setNewPositions([
-          { id: "392", name: "Bosun" },
-          { id: "393", name: "Able Seaman (AB)" },
-        ]);
+        setNewPositions([{ id: "394", name: "General Steward" }]);
         break;
       case "220":
-        setNewPositions([{ id: "394", name: "Bosun" }]);
+        setNewPositions([
+          { id: "395", name: "Ordinary Seaman (OS)" },
+          { id: "396", name: "Steward" },
+        ]);
         break;
       case "221":
-        setNewPositions([
-          { id: "395", name: "Able Seaman (AB)" },
-          { id: "396", name: "Ordinary Seaman (OS)" },
-        ]);
+        setNewPositions([{ id: "397", name: "Welder" }]);
         break;
       case "222":
-        setNewPositions([
-          { id: "397", name: "Captain (Master)" },
-          { id: "398", name: "Chief Engineer" },
-        ]);
+        setNewPositions([{ id: "398", name: "Messman" }]);
         break;
+
+      //case "6"
+
       case "223":
-        setNewPositions([
-          { id: "399", name: "Chief Engineer" },
-          { id: "400", name: "2nd Engineer" },
-        ]);
+        setNewPositions([{ id: "399", name: "Captain (Master)" }]);
         break;
       case "224":
         setNewPositions([
-          { id: "401", name: "2nd Engineer" },
-          { id: "402", name: "3rd Engineer" },
+          { id: "400", name: "Captain (Master)" },
+          { id: "401", name: "Chief Officer (Chief Mate)" },
         ]);
         break;
       case "225":
         setNewPositions([
-          { id: "403", name: "3rd Engineer" },
-          { id: "404", name: "4th Engineer" },
+          { id: "402", name: "Chief Officer (Chief Mate)" },
+          { id: "403", name: "Second Officer (Second Mate)" },
         ]);
         break;
       case "226":
         setNewPositions([
-          { id: "405", name: "Second Engineer" },
-          { id: "406", name: "Electrical Officer (ETO)" },
+          { id: "404", name: "Second Officer (Second Mate)" },
+          { id: "405", name: "Third Officer (Third Mate)" },
         ]);
         break;
       case "227":
-        setNewPositions([{ id: "407", name: "Wiper" }]);
+        setNewPositions([
+          { id: "406", name: "Third Officer (Third Mate)" },
+          { id: "407", name: "Junior Officer" },
+        ]);
         break;
       case "228":
-        setNewPositions([{ id: "408", name: "Fitter" }]);
+        setNewPositions([
+          { id: "408", name: "Junior Officer" },
+          { id: "409", name: "Deck Cadet" },
+        ]);
         break;
       case "229":
-        setNewPositions([{ id: "409", name: "Cook" }]);
+        setNewPositions([
+          { id: "410", name: "Captain (Master)" },
+          { id: "411", name: "Chief Engineer" },
+        ]);
         break;
       case "230":
-        setNewPositions([{ id: "410", name: "Welder" }]);
+        setNewPositions([
+          { id: "412", name: "Chief Engineer" },
+          { id: "413", name: "Second Engineer" },
+        ]);
         break;
       case "231":
-        setNewPositions([{ id: "411", name: "Messman" }]);
+        setNewPositions([
+          { id: "414", name: "Second Engineer" },
+          { id: "415", name: "Third Engineer" },
+        ]);
         break;
       case "232":
-        setNewPositions([{ id: "412", name: "Motorman" }]);
+        setNewPositions([
+          { id: "416", name: "Third Engineer" },
+          { id: "417", name: "Fourth Engineer" },
+        ]);
+        break;
+      case "233":
+        setNewPositions([{ id: "418", name: "TME" }]);
+        break;
+      case "234":
+        setNewPositions([
+          { id: "419", name: "Second Engineer" },
+          { id: "420", name: "Electrical Officer (EO)" },
+        ]);
+        break;
+      case "235":
+        setNewPositions([
+          { id: "421", name: "Electrical Officer (EO)" },
+          { id: "422", name: "Electro-Technical Officer (ETO)" },
+        ]);
+        break;
+      case "236":
+        setNewPositions([{ id: "423", name: "Bosun" }]);
+        break;
+      case "237":
+        setNewPositions([
+          { id: "424", name: "Bosun" },
+          { id: "425", name: "Able Seaman (AB)" },
+        ]);
+        break;
+      case "238":
+        setNewPositions([
+          { id: "426", name: "Able Seaman (AB)" },
+          { id: "427", name: "Ordinary Seaman (OS)" },
+        ]);
+        break;
+      case "239":
+        setNewPositions([
+          { id: "428", name: "Ordinary Seaman (OS)" },
+          { id: "429", name: "Trainee OS" },
+        ]);
+        break;
+      case "240":
+        setNewPositions([{ id: "430", name: "Fitter" }]);
+        break;
+      case "241":
+        setNewPositions([{ id: "431", name: "Motorman/Oiler" }]);
+        break;
+      case "242":
+        setNewPositions([{ id: "432", name: "Wiper" }]);
+        break;
+      case "243":
+        setNewPositions([{ id: "433", name: "Pumpman" }]);
+        break;
+      case "244":
+        setNewPositions([{ id: "434", name: "Second Cook" }]);
+        break;
+      case "245":
+        setNewPositions([
+          { id: "435", name: "Chief Cook" },
+          { id: "436", name: "Second Cook" },
+        ]);
+        break;
+      case "246":
+        setNewPositions([
+          { id: "437", name: "Second Cook" },
+          { id: "438", name: "Trainee Cook" },
+        ]);
+        break;
+      case "247":
+        setNewPositions([{ id: "439", name: "General Steward" }]);
+        break;
+      case "248":
+        setNewPositions([
+          { id: "440", name: "Ordinary Seaman (OS)" },
+          { id: "441", name: "Steward" },
+        ]);
+        break;
+      case "249":
+        setNewPositions([{ id: "442", name: "Welder" }]);
+        break;
+      case "250":
+        setNewPositions([{ id: "443", name: "Messman" }]);
+        break;
+
+      // case "7":
+
+      case "251":
+        setNewPositions([{ id: "444", name: "Captain (Master)" }]);
+        break;
+      case "252":
+        setNewPositions([
+          { id: "445", name: "Captain (Master)" },
+          { id: "446", name: "Chief Officer (Chief Mate)" },
+        ]);
+        break;
+      case "253":
+        setNewPositions([
+          { id: "447", name: "Chief Officer (Chief Mate)" },
+          { id: "448", name: "Second Officer (Second Mate)" },
+        ]);
+        break;
+      case "254":
+        setNewPositions([
+          { id: "449", name: "Second Officer (Second Mate)" },
+          { id: "450", name: "Third Officer (Third Mate)" },
+        ]);
+        break;
+      case "255":
+        setNewPositions([
+          { id: "451", name: "Third Officer (Third Mate)" },
+          { id: "452", name: "Junior Officer" },
+        ]);
+        break;
+      case "256":
+        setNewPositions([
+          { id: "453", name: "Junior Officer" },
+          { id: "454", name: "Deck Cadet" },
+        ]);
+        break;
+      case "257":
+        setNewPositions([
+          { id: "455", name: "Captain (Master)" },
+          { id: "456", name: "Chief Engineer" },
+        ]);
+        break;
+      case "258":
+        setNewPositions([
+          { id: "457", name: "Chief Engineer" },
+          { id: "458", name: "Second Engineer" },
+        ]);
+        break;
+      case "259":
+        setNewPositions([
+          { id: "459", name: "Second Engineer" },
+          { id: "460", name: "Third Engineer" },
+        ]);
+        break;
+      case "260":
+        setNewPositions([
+          { id: "461", name: "Third Engineer" },
+          { id: "462", name: "Fourth Engineer" },
+        ]);
+        break;
+      case "261":
+        setNewPositions([{ id: "463", name: "TME" }]);
+        break;
+      case "262":
+        setNewPositions([
+          { id: "464", name: "Second Engineer" },
+          { id: "465", name: "Electrical Officer (EO)" },
+        ]);
+        break;
+      case "263":
+        setNewPositions([
+          { id: "466", name: "Electrical Officer (EO)" },
+          { id: "467", name: "Electro-Technical Officer (ETO)" },
+        ]);
+        break;
+      case "264":
+        setNewPositions([{ id: "468", name: "Bosun" }]);
+        break;
+      case "265":
+        setNewPositions([
+          { id: "469", name: "Bosun" },
+          { id: "470", name: "Able Seaman (AB)" },
+        ]);
+        break;
+      case "266":
+        setNewPositions([
+          { id: "471", name: "Able Seaman (AB)" },
+          { id: "472", name: "Ordinary Seaman (OS)" },
+        ]);
+        break;
+      case "267":
+        setNewPositions([
+          { id: "473", name: "Ordinary Seaman (OS)" },
+          { id: "474", name: "Trainee OS" },
+        ]);
+        break;
+      case "268":
+        setNewPositions([{ id: "475", name: "Fitter" }]);
+        break;
+      case "269":
+        setNewPositions([{ id: "476", name: "Motorman/Oiler" }]);
+        break;
+      case "270":
+        setNewPositions([{ id: "477", name: "Wiper" }]);
+        break;
+      case "271":
+        setNewPositions([{ id: "478", name: "Pumpman" }]);
+        break;
+      case "272":
+        setNewPositions([{ id: "479", name: "Second Cook" }]);
+        break;
+      case "273":
+        setNewPositions([
+          { id: "480", name: "Chief Cook" },
+          { id: "481", name: "Second Cook" },
+        ]);
+        break;
+      case "274":
+        setNewPositions([
+          { id: "482", name: "Second Cook" },
+          { id: "483", name: "Trainee Cook" },
+        ]);
+        break;
+      case "275":
+        setNewPositions([{ id: "484", name: "General Steward" }]);
+        break;
+      case "276":
+        setNewPositions([
+          { id: "485", name: "Ordinary Seaman (OS)" },
+          { id: "486", name: "Steward" },
+        ]);
+        break;
+      case "277":
+        setNewPositions([{ id: "487", name: "Welder" }]);
+        break;
+      case "278":
+        setNewPositions([{ id: "488", name: "Messman" }]);
+        break;
+
+      // case "8":
+
+      case "279":
+        setNewPositions([{ id: "489", name: "Captain (Master)" }]);
+        break;
+      case "280":
+        setNewPositions([
+          { id: "490", name: "Captain (Master)" },
+          { id: "491", name: "Chief Officer (Chief Mate)" },
+        ]);
+        break;
+      case "281":
+        setNewPositions([
+          { id: "492", name: "Chief Officer (Chief Mate)" },
+          { id: "493", name: "Second Officer (Second Mate)" },
+        ]);
+        break;
+      case "282":
+        setNewPositions([
+          { id: "494", name: "Second Officer (Second Mate)" },
+          { id: "495", name: "Third Officer (Third Mate)" },
+        ]);
+        break;
+      case "283":
+        setNewPositions([
+          { id: "496", name: "Third Officer (Third Mate)" },
+          { id: "497", name: "Junior Officer" },
+        ]);
+        break;
+      case "284":
+        setNewPositions([
+          { id: "498", name: "Junior Officer" },
+          { id: "499", name: "Deck Cadet" },
+        ]);
+        break;
+      case "285":
+        setNewPositions([
+          { id: "500", name: "Captain (Master)" },
+          { id: "501", name: "Chief Engineer" },
+        ]);
+        break;
+      case "286":
+        setNewPositions([
+          { id: "502", name: "Chief Engineer" },
+          { id: "503", name: "Second Engineer" },
+        ]);
+        break;
+      case "287":
+        setNewPositions([
+          { id: "504", name: "Second Engineer" },
+          { id: "505", name: "Third Engineer" },
+        ]);
+        break;
+      case "288":
+        setNewPositions([
+          { id: "506", name: "Third Engineer" },
+          { id: "507", name: "Fourth Engineer" },
+        ]);
+        break;
+      case "289":
+        setNewPositions([{ id: "508", name: "TME" }]);
+        break;
+      case "290":
+        setNewPositions([
+          { id: "509", name: "Second Engineer" },
+          { id: "510", name: "Electrical Officer (EO)" },
+        ]);
+        break;
+      case "291":
+        setNewPositions([
+          { id: "511", name: "Electrical Officer (EO)" },
+          { id: "512", name: "Electro-Technical Officer (ETO)" },
+        ]);
+        break;
+      case "292":
+        setNewPositions([{ id: "513", name: "Bosun" }]);
+        break;
+      case "293":
+        setNewPositions([
+          { id: "514", name: "Bosun" },
+          { id: "515", name: "Able Seaman (AB)" },
+        ]);
+        break;
+      case "294":
+        setNewPositions([
+          { id: "516", name: "Able Seaman (AB)" },
+          { id: "517", name: "Ordinary Seaman (OS)" },
+        ]);
+        break;
+      case "295":
+        setNewPositions([
+          { id: "518", name: "Ordinary Seaman (OS)" },
+          { id: "519", name: "Trainee OS" },
+        ]);
+        break;
+      case "296":
+        setNewPositions([{ id: "520", name: "Fitter" }]);
+        break;
+      case "297":
+        setNewPositions([{ id: "521", name: "Motorman/Oiler" }]);
+        break;
+      case "298":
+        setNewPositions([{ id: "522", name: "Wiper" }]);
+        break;
+      case "299":
+        setNewPositions([{ id: "523", name: "Pumpman" }]);
+        break;
+      case "300":
+        setNewPositions([{ id: "524", name: "Second Cook" }]);
+        break;
+      case "301":
+        setNewPositions([
+          { id: "525", name: "Chief Cook" },
+          { id: "526", name: "Second Cook" },
+        ]);
+        break;
+      case "302":
+        setNewPositions([
+          { id: "527", name: "Second Cook" },
+          { id: "528", name: "Trainee Cook" },
+        ]);
+        break;
+      case "303":
+        setNewPositions([{ id: "529", name: "General Steward" }]);
+        break;
+      case "304":
+        setNewPositions([
+          { id: "530", name: "Ordinary Seaman (OS)" },
+          { id: "531", name: "Steward" },
+        ]);
+        break;
+      case "305":
+        setNewPositions([{ id: "532", name: "Welder" }]);
+        break;
+      case "306":
+        setNewPositions([{ id: "533", name: "Messman" }]);
         break;
     }
   };
@@ -1242,10 +1665,10 @@ const CareerForm = ({ subject }) => {
       {successMessage ? (
         ""
       ) : (
-        <small style={{ color: "#555"}}>All fields are mandatory</small>
+        <small style={{ color: "#555" }}>All fields are mandatory</small>
       )}
       {successMessage ? "" : <h3>Submit a CV/Resume(Offshore Job):</h3>}
-      
+
       <div className="form-bg mb-1">
         {formVisible ? (
           <form onSubmit={handleSubmit} encType="multipart/form-data">

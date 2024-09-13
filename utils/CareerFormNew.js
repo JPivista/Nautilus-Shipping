@@ -430,7 +430,7 @@ const CareerForm = ({ subject }) => {
         break;
       case "108":
         setNewPositions([
-          { id: "213", name: "Captain (Master)" },
+          // { id: "213", name: "Captain (Master)" },
           { id: "214", name: "Chief Engineer" },
         ]);
         break;
@@ -453,11 +453,14 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "112":
-        setNewPositions([{ id: "221", name: "TME" }]);
+        setNewPositions([
+          { id: "221", name: "TME" },
+          { id: "534", name: "Fourth Engineer" },
+        ]);
         break;
       case "113":
         setNewPositions([
-          { id: "222", name: "Second Engineer" },
+          { id: "222", name: "Electro-Technical Officer (ETO)" },
           { id: "223", name: "Electrical Officer (EO)" },
         ]);
         break;
@@ -571,7 +574,7 @@ const CareerForm = ({ subject }) => {
         break;
       case "136":
         setNewPositions([
-          { id: "258", name: "Captain (Master)" },
+          // { id: "258", name: "Captain (Master)" },
           { id: "259", name: "Chief Engineer" },
         ]);
         break;
@@ -594,11 +597,13 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "140":
-        setNewPositions([{ id: "266", name: "TME" }]);
+        setNewPositions([{ id: "266", name: "TME" },
+          { id: "535", name: "Fourth Engineer" },
+        ]);
         break;
       case "141":
         setNewPositions([
-          { id: "267", name: "Second Engineer" },
+          { id: "267", name: "Electro-Technical Officer (ETO)" },
           { id: "268", name: "Electrical Officer (EO)" },
         ]);
         break;
@@ -762,7 +767,7 @@ const CareerForm = ({ subject }) => {
         break;
       case "173":
         setNewPositions([
-          { id: "320", name: "Captain (Master)" },
+          // { id: "320", name: "Captain (Master)" },
           { id: "321", name: "Chief Engineer" },
         ]);
         break;
@@ -785,11 +790,13 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "177":
-        setNewPositions([{ id: "328", name: "TME" }]);
+        setNewPositions([{ id: "328", name: "TME" },
+          { id: "536", name: "Fourth Engineer" },
+        ]);
         break;
       case "178":
         setNewPositions([
-          { id: "329", name: "Second Engineer" },
+          { id: "329", name: "Electro-Technical Officer (ETO)" },
           { id: "330", name: "Electrical Officer (EO)" },
         ]);
         break;
@@ -900,7 +907,7 @@ const CareerForm = ({ subject }) => {
         break;
       case "201":
         setNewPositions([
-          { id: "365", name: "Captain (Master)" },
+          // { id: "365", name: "Captain (Master)" },
           { id: "366", name: "Chief Engineer" },
         ]);
         break;
@@ -923,11 +930,13 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "205":
-        setNewPositions([{ id: "373", name: "TME" }]);
+        setNewPositions([{ id: "373", name: "TME" },
+          { id: "537", name: "Fourth Engineer" },
+        ]);
         break;
       case "206":
         setNewPositions([
-          { id: "374", name: "Second Engineer" },
+          { id: "374", name: "Electro-Technical Officer (ETO)" },
           { id: "375", name: "Electrical Officer (EO)" },
         ]);
         break;
@@ -1038,7 +1047,7 @@ const CareerForm = ({ subject }) => {
         break;
       case "229":
         setNewPositions([
-          { id: "410", name: "Captain (Master)" },
+          // { id: "410", name: "Captain (Master)" },
           { id: "411", name: "Chief Engineer" },
         ]);
         break;
@@ -1061,11 +1070,13 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "233":
-        setNewPositions([{ id: "418", name: "TME" }]);
+        setNewPositions([{ id: "418", name: "TME" },
+          { id: "538", name: "Fourth Engineer" },
+        ]);
         break;
       case "234":
         setNewPositions([
-          { id: "419", name: "Second Engineer" },
+          { id: "419", name: "Electro-Technical Officer (ETO)" },
           { id: "420", name: "Electrical Officer (EO)" },
         ]);
         break;
@@ -1176,7 +1187,7 @@ const CareerForm = ({ subject }) => {
         break;
       case "257":
         setNewPositions([
-          { id: "455", name: "Captain (Master)" },
+          // { id: "455", name: "Captain (Master)" },
           { id: "456", name: "Chief Engineer" },
         ]);
         break;
@@ -1199,11 +1210,13 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "261":
-        setNewPositions([{ id: "463", name: "TME" }]);
+        setNewPositions([{ id: "463", name: "TME" },
+          { id: "539", name: "Fourth Engineer" },
+        ]);
         break;
       case "262":
         setNewPositions([
-          { id: "464", name: "Second Engineer" },
+          { id: "464", name: "Electro-Technical Officer (ETO)" },
           { id: "465", name: "Electrical Officer (EO)" },
         ]);
         break;
@@ -1314,7 +1327,7 @@ const CareerForm = ({ subject }) => {
         break;
       case "285":
         setNewPositions([
-          { id: "500", name: "Captain (Master)" },
+          // { id: "500", name: "Captain (Master)" },
           { id: "501", name: "Chief Engineer" },
         ]);
         break;
@@ -1337,11 +1350,13 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "289":
-        setNewPositions([{ id: "508", name: "TME" }]);
+        setNewPositions([{ id: "508", name: "TME" },
+          { id: "540", name: "Fourth Engineer" },
+        ]);
         break;
       case "290":
         setNewPositions([
-          { id: "509", name: "Second Engineer" },
+          { id: "509", name: "Electro-Technical Officer (ETO)" },
           { id: "510", name: "Electrical Officer (EO)" },
         ]);
         break;

@@ -17,11 +17,9 @@ import { format } from "date-fns";
 import Head from "next/head";
 import PostList from "../utils/PostListCareer";
 import CareerFormNew from "../utils/CareerFormNew";
-import OnshoreCareerForm from "../utils/OnshoreCareerForm";
-import TabsComponent from "../components/CareerTab"; // Imported the TabsComponent
-
 import Robots from "../utils/robots";
 // import TestCareerForm from '../utils/TestCareerForm'
+import OnshoreCareerForm from "../utils/OnshoreCareerForm";
 
 const NewCareer = () => {
   const bannerBackground = {
@@ -114,6 +112,7 @@ const NewCareer = () => {
         className="d-none d-lg-block d-xxl-block d-xl-block"
       >
         <Row style={{ height: "561px" }}>
+            
           <Col></Col>
           <Col
             md={6}
@@ -150,28 +149,27 @@ const NewCareer = () => {
         }}
       >
         <Container className="ban-text-career">
-          {/* <p>
-            Nautilus Shipping is one of the fastest growing shipping companies
-            in India and has multiple shipping job vacancies for the right
-            candidates.
-          </p> */}
+        <p>
+                Nautilus Shipping is one of the fastest growing shipping
+                companies in India and has multiple shipping job vacancies for
+                the right candidates.
+              </p>
           <Row>
             <Col lg={6} sm={12} className="order-sm-0 order-1">
-              {/* <div
+            <div
                 style={{
                   background: "#E2E3E3",
                   padding: "14px",
                   color: "#555",
-                  margin: "5px",
+                  margin:"5px"
                 }}
               >
                 <OnshoreCareerForm subject={"Career Query"} />
-              </div> */}
+               
+              </div>
 
-              <h2
-                className="pt-3"
-                style={{ color: "#555", marginBottom: "20px" }}
-              >
+
+              <h2 className="pt-3" style={{ color: "#555", marginBottom: "20px" }}>
                 Why Join Nautilus Shipping?
               </h2>
               <p>
@@ -210,23 +208,25 @@ const NewCareer = () => {
               </p>
             </Col>
             <Col lg={6} sm={12} className="order-sm-1 order-0 mb-5">
-              {/* Insert the TabsComponent here */}
-              <p>
-            Nautilus Shipping is one of the fastest growing shipping companies
-            in India and has multiple shipping job vacancies for the right
-            candidates.
-          </p>
-               <div
+              {/* <p>
+                Nautilus Shipping is one of the fastest growing shipping
+                companies in India and has multiple shipping job vacancies for
+                the right candidates.
+              </p> */}
+              <div
                 style={{
                   background: "#E2E3E3",
                   padding: "14px",
                   color: "#555",
-                  margin: "5px",
+                  margin:"5px"
                 }}
               >
-              <TabsComponent />
+                <CareerFormNew subject={"Career Query"} />
+                {/* <TestCareerForm subject={'Career Query'} /> */}
               </div>
             </Col>
+
+            {/* //test */}
           </Row>
         </Container>
         <div className="d-none d-lg-block">

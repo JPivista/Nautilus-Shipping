@@ -14,12 +14,13 @@ const TabsComponent = () => {
           .nav-tabs .nav-link {
             background-color: #ffffff;
             color: #000000; 
+             border: none !important; /* Remove borders */
           }
 
           .nav-tabs .nav-link.active {
-            // background-color: #00222F !important; 
             background-color: #008E9C !important; 
             color: #ffffff !important; 
+             border: none !important; /* Remove borders */
           }
         `}
       </style>
@@ -27,10 +28,14 @@ const TabsComponent = () => {
         {/* Tab Headers */}
         <Nav variant="tabs" className="mb-3">
           <Nav.Item>
-            <Nav.Link className="mx-2 fw-bold" eventKey="tab1">Offshore/Sea Job</Nav.Link>
+            <Nav.Link className="mx-2 fw-bold" eventKey="tab1">
+              Offshore/Sea Job
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="mx-2 fw-bold" eventKey="tab2">Onshore/Shore Job</Nav.Link>
+            <Nav.Link className="mx-2 fw-bold" eventKey="tab2">
+              Onshore/Shore Job
+            </Nav.Link>
           </Nav.Item>
         </Nav>
 

@@ -382,7 +382,7 @@ const OnshoreCareerForm = () => {
           </form>
         ) : (
           <div className="mt-5 text-center mb-5">
-            <h3 className="fs-4">
+            <h3 className="fs-1">
               Thank you for your interest in Nautilus Shipping.
             </h3>
             <h3 className="fs-4">

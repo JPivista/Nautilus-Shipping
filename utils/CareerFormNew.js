@@ -130,7 +130,7 @@ const CareerForm = ({ subject }) => {
           { id: "111", name: "Fourth Engineer" },
           { id: "112", name: "TME" },
           { id: "113", name: "Electrical Officer (EO)" },
-          { id: "114", name: "Electo-Technical Officer (ETO)" },
+          { id: "114", name: "Electo-Technical Officer " },
           { id: "115", name: "Bosun" },
           { id: "116", name: "Able Seaman(AB)" },
           { id: "117", name: "Ordinary Seaman(OS)" },
@@ -163,7 +163,7 @@ const CareerForm = ({ subject }) => {
           { id: "139", name: "Fourth Engineer" },
           { id: "140", name: "TME" },
           { id: "141", name: "Electrical Officer (EO)" },
-          { id: "142", name: "Electo-Technical Officer (ETO)" },
+          { id: "142", name: "Electo-Technical Officer " },
           { id: "143", name: "Bosun" },
           { id: "144", name: "Able Seaman(AB)" },
           { id: "145", name: "Ordinary Seaman(OS)" },
@@ -210,7 +210,7 @@ const CareerForm = ({ subject }) => {
           { id: "176", name: "Fourth Engineer" },
           { id: "177", name: "TME" },
           { id: "178", name: "Electrical Officer (EO)" },
-          { id: "179", name: "Electo-Technical Officer (ETO)" },
+          { id: "179", name: "Electo-Technical Officer " },
           { id: "180", name: "Bosun" },
           { id: "181", name: "Able Seaman(AB)" },
           { id: "182", name: "Ordinary Seaman(OS)" },
@@ -251,7 +251,7 @@ const CareerForm = ({ subject }) => {
           { id: "204", name: "Fourth Engineer" },
           { id: "205", name: "TME" },
           { id: "206", name: "Electrical Officer (EO)" },
-          { id: "207", name: "Electo-Technical Officer (ETO)" },
+          { id: "207", name: "Electo-Technical Officer " },
           { id: "208", name: "Bosun" },
           { id: "209", name: "Able Seaman(AB)" },
           { id: "210", name: "Ordinary Seaman(OS)" },
@@ -284,7 +284,7 @@ const CareerForm = ({ subject }) => {
           { id: "232", name: "Fourth Engineer" },
           { id: "233", name: "TME" },
           { id: "234", name: "Electrical Officer (EO)" },
-          { id: "235", name: "Electo-Technical Officer (ETO)" },
+          { id: "235", name: "Electo-Technical Officer" },
           { id: "236", name: "Bosun" },
           { id: "237", name: "Able Seaman(AB)" },
           { id: "238", name: "Ordinary Seaman(OS)" },
@@ -318,7 +318,7 @@ const CareerForm = ({ subject }) => {
           { id: "260", name: "Fourth Engineer" },
           { id: "261", name: "TME" },
           { id: "262", name: "Electrical Officer (EO)" },
-          { id: "263", name: "Electo-Technical Officer (ETO)" },
+          { id: "263", name: "Electo-Technical Officer " },
           { id: "264", name: "Bosun" },
           { id: "265", name: "Able Seaman(AB)" },
           { id: "266", name: "Ordinary Seaman(OS)" },
@@ -352,7 +352,7 @@ const CareerForm = ({ subject }) => {
           { id: "288", name: "Fourth Engineer" },
           { id: "289", name: "TME" },
           { id: "290", name: "Electrical Officer (EO)" },
-          { id: "291", name: "Electo-Technical Officer (ETO)" },
+          { id: "291", name: "Electo-Technical Officer" },
           { id: "292", name: "Bosun" },
           { id: "293", name: "Able Seaman(AB)" },
           { id: "294", name: "Ordinary Seaman(OS)" },
@@ -460,14 +460,14 @@ const CareerForm = ({ subject }) => {
         break;
       case "113":
         setNewPositions([
-          { id: "222", name: "Electro-Technical Officer (ETO)" },
+          { id: "222", name: "Electro-Technical Officer " },
           { id: "223", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "114":
         setNewPositions([
           { id: "224", name: "Electrical Officer (EO)" },
-          { id: "225", name: "Electro-Technical Officer (ETO)" },
+          { id: "225", name: "Electro-Technical Officer" },
         ]);
         break;
       case "115":
@@ -597,20 +597,21 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "140":
-        setNewPositions([{ id: "266", name: "TME" },
+        setNewPositions([
+          { id: "266", name: "TME" },
           { id: "535", name: "Fourth Engineer" },
         ]);
         break;
       case "141":
         setNewPositions([
-          { id: "267", name: "Electro-Technical Officer (ETO)" },
+          { id: "267", name: "Electro-Technical Officer" },
           { id: "268", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "142":
         setNewPositions([
           { id: "269", name: "Electrical Officer (EO)" },
-          { id: "270", name: "Electro-Technical Officer (ETO)" },
+          { id: "270", name: "Electro-Technical Officer" },
         ]);
         break;
       case "143":
@@ -790,20 +791,21 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "177":
-        setNewPositions([{ id: "328", name: "TME" },
+        setNewPositions([
+          { id: "328", name: "TME" },
           { id: "536", name: "Fourth Engineer" },
         ]);
         break;
       case "178":
         setNewPositions([
-          { id: "329", name: "Electro-Technical Officer (ETO)" },
+          { id: "329", name: "Electro-Technical Officer" },
           { id: "330", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "179":
         setNewPositions([
           { id: "331", name: "Electrical Officer (EO)" },
-          { id: "332", name: "Electro-Technical Officer (ETO)" },
+          { id: "332", name: "Electro-Technical Officer" },
         ]);
         break;
       case "180":
@@ -930,20 +932,21 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "205":
-        setNewPositions([{ id: "373", name: "TME" },
+        setNewPositions([
+          { id: "373", name: "TME" },
           { id: "537", name: "Fourth Engineer" },
         ]);
         break;
       case "206":
         setNewPositions([
-          { id: "374", name: "Electro-Technical Officer (ETO)" },
+          { id: "374", name: "Electro-Technical Officer" },
           { id: "375", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "207":
         setNewPositions([
           { id: "376", name: "Electrical Officer (EO)" },
-          { id: "377", name: "Electro-Technical Officer (ETO)" },
+          { id: "377", name: "Electro-Technical Officer" },
         ]);
         break;
       case "208":
@@ -1070,20 +1073,21 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "233":
-        setNewPositions([{ id: "418", name: "TME" },
+        setNewPositions([
+          { id: "418", name: "TME" },
           { id: "538", name: "Fourth Engineer" },
         ]);
         break;
       case "234":
         setNewPositions([
-          { id: "419", name: "Electro-Technical Officer (ETO)" },
+          { id: "419", name: "Electro-Technical Officer" },
           { id: "420", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "235":
         setNewPositions([
           { id: "421", name: "Electrical Officer (EO)" },
-          { id: "422", name: "Electro-Technical Officer (ETO)" },
+          { id: "422", name: "Electro-Technical Officer" },
         ]);
         break;
       case "236":
@@ -1210,20 +1214,21 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "261":
-        setNewPositions([{ id: "463", name: "TME" },
+        setNewPositions([
+          { id: "463", name: "TME" },
           { id: "539", name: "Fourth Engineer" },
         ]);
         break;
       case "262":
         setNewPositions([
-          { id: "464", name: "Electro-Technical Officer (ETO)" },
+          { id: "464", name: "Electro-Technical Officer" },
           { id: "465", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "263":
         setNewPositions([
           { id: "466", name: "Electrical Officer (EO)" },
-          { id: "467", name: "Electro-Technical Officer (ETO)" },
+          { id: "467", name: "Electro-Technical Officer" },
         ]);
         break;
       case "264":
@@ -1350,20 +1355,21 @@ const CareerForm = ({ subject }) => {
         ]);
         break;
       case "289":
-        setNewPositions([{ id: "508", name: "TME" },
+        setNewPositions([
+          { id: "508", name: "TME" },
           { id: "540", name: "Fourth Engineer" },
         ]);
         break;
       case "290":
         setNewPositions([
-          { id: "509", name: "Electro-Technical Officer (ETO)" },
+          { id: "509", name: "Electro-Technical Officer" },
           { id: "510", name: "Electrical Officer (EO)" },
         ]);
         break;
       case "291":
         setNewPositions([
           { id: "511", name: "Electrical Officer (EO)" },
-          { id: "512", name: "Electro-Technical Officer (ETO)" },
+          { id: "512", name: "Electro-Technical Officer" },
         ]);
         break;
       case "292":
@@ -1523,10 +1529,11 @@ const CareerForm = ({ subject }) => {
       }
     }
     if (name === "indosNo") {
-      // Check if the value is numeric and exactly 8 digits
-      if (!/^\d{8}$/.test(value)) {
+      // Check if the value is alphanumeric and exactly 8 characters
+      if (!/^[A-Za-z0-9]{8}$/.test(value)) {
         const fieldErrors = {};
-        fieldErrors[name] = "INDoS No. must be exactly 8 digits.";
+        fieldErrors[name] =
+          "INDoS No. must be exactly 8 alphanumeric characters.";
         setErrors(fieldErrors);
       } else {
         setErrors({});
@@ -1891,7 +1898,8 @@ const CareerForm = ({ subject }) => {
                     value={formData.indosNo}
                     onChange={handleChange}
                     onKeyDown={(e) => {
-                      // Allow only numeric input and some control keys
+                      // Allow only alphanumeric input and control keys
+                      const isAlphanumeric = /^[A-Za-z0-9]$/;
                       if (
                         !(
                           e.key === "Tab" ||
@@ -1899,7 +1907,7 @@ const CareerForm = ({ subject }) => {
                           e.key === "Delete" ||
                           e.key === "ArrowLeft" ||
                           e.key === "ArrowRight" ||
-                          (e.key >= "0" && e.key <= "9")
+                          isAlphanumeric.test(e.key)
                         )
                       ) {
                         e.preventDefault();
@@ -2022,7 +2030,7 @@ const CareerForm = ({ subject }) => {
           </form>
         ) : (
           <div className="mt-5 text-center mb-5">
-            <h3 className="fs-4">
+            <h3 className="fs-1">
               Thank you for your interest in Nautilus Shipping.
             </h3>
             <h3 className="fs-4">

@@ -28,12 +28,12 @@ const TabsComponent = () => {
         {/* Tab Headers */}
         <Nav variant="tabs" className="mb-3">
           <Nav.Item>
-            <Nav.Link className="mx-2 fw-bold" eventKey="tab1">
+            <Nav.Link className="mx-2 fw-bold rounded-0" eventKey="tab1">
               Offshore/Sea Job
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="mx-2 fw-bold" eventKey="tab2">
+            <Nav.Link className="mx-2 fw-bold rounded-0" eventKey="tab2">
               Onshore/Shore Job
             </Nav.Link>
           </Nav.Item>

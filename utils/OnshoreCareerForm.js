@@ -117,8 +117,9 @@ const OnshoreCareerForm = () => {
   };
 
   const handlePositionChange = (e) => {
-    const selectedOption = e.target.options[e.target.selectedIndex].text;
-    setSelectedPosition(selectedOption);
+    // Get the selected position name from the dropdown
+    const selectedName = e.target.options[e.target.selectedIndex].text;
+    setSelectedPosition(selectedName); // Set the position name in state
   };
 
   const handleSubmit = async (e) => {
@@ -195,7 +196,7 @@ const OnshoreCareerForm = () => {
                     placeholder="Enter Name"
                     value={formData.firstname}
                     onChange={handleChange}
-                    maxLength={6}
+                    // maxLength={6}
                   />
                   {errors.firstname && (
                     <div className="invalid-feedback">{errors.firstname}</div>
@@ -297,11 +298,11 @@ const OnshoreCareerForm = () => {
                     className={`form-select form-control ${
                       errors.position ? "is-invalid" : ""
                     }`}
-                    value={selectedPosition}
+                    value={selectedPosition} // This binds the dropdown to the selected name
                   >
                     <option value="">Select Position</option>
-                    {position.map((pos, index) => (
-                      <option key={index} value={pos.id}>
+                    {position.map((pos) => (
+                      <option key={pos.id} value={pos.position_name}>
                         {pos.position_name}
                       </option>
                     ))}
@@ -313,7 +314,7 @@ const OnshoreCareerForm = () => {
               </Col>
             </Row>
             <Row>
-            <Col sm={12} lg={12}>
+              <Col sm={12} lg={12}>
                 <div class="input-group">
                   <input
                     type="file"
@@ -328,7 +329,7 @@ const OnshoreCareerForm = () => {
                     aria-label="Upload"
                   />
                 </div>
-               
+
                 <p
                   className="pt-1"
                   style={{ lineHeight: "16px", fontSize: "12px" }}
@@ -380,7 +381,7 @@ const OnshoreCareerForm = () => {
             {/* {error && <p className="text-danger">{error}</p>} */}
           </form>
         ) : (
-            <div className="mt-5 text-center mb-5">
+          <div className="mt-5 text-center mb-5">
             <h3 className="fs-4">
               Thank you for your interest in Nautilus Shipping.
             </h3>

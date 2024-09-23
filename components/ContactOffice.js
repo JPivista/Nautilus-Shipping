@@ -45,8 +45,8 @@ const ContactOffice = () => {
                 <hr />
                 <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
                   <p className='merriweather mb-0 ' style={{ fontSize: '20px' }}>
-                    <Link href="tel:+91 80 4196 6600" target='_blank' className='text-decoration-none text-white'>
-                      +91 80 4196 6600
+                    <Link href="tel:+91 80 6998 9999" target='_blank' className='text-decoration-none text-white'>
+                      +91 80 6998 9999
                     </Link>
                   </p>
                 </Card.Title>
@@ -83,8 +83,8 @@ const ContactOffice = () => {
                 <hr />
                 <Card.Title className="off-phone d-flex align-items-center card-titles"><i className="fa fa-phone pe-2" style={{ fontSize: '30px !important' }}></i>
                   <p className='merriweather mb-0' style={{ fontSize: '20px' }}>
-                    <Link href="tel:+91 22 2550 8970" target='_blank' className='text-decoration-none text-white'>
-                      +91 22 2550 8970
+                    <Link href="tel:+91 22 6998 9999" target='_blank' className='text-decoration-none text-white'>
+                      +91 22 6998 9999
                     </Link></p></Card.Title>
               </Card.Body>
             </Card>

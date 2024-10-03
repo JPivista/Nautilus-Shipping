@@ -173,7 +173,32 @@ const OnshoreCareerForm = () => {
     setIsSubmitting(false);
   };
 
-  const position = [{ id: "1", position_name: "HSEQ Executive/3rd Officer" }];
+  const position = [
+    {
+      id: "1",
+      position_name: "HSEQ Executive/3rd Officer",
+    },
+    {
+      id: "2",
+      position_name: "Technical Superintendent",
+    },
+    {
+      id: "3",
+      position_name: "Accounts Assistant",
+    },
+    {
+      id: "4",
+      position_name: "Accounts Executive",
+    },
+    {
+      id: "5",
+      position_name: "Fleet Accountant",
+    },
+    {
+      id: "6",
+      position_name: "Operations Executive",
+    },
+  ];
 
   return (
     <>

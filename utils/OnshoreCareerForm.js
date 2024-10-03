@@ -184,18 +184,22 @@ const OnshoreCareerForm = () => {
     },
     {
       id: "3",
-      position_name: "Accounts Assistant",
+      position_name: "Fleet Personnel Executive",
     },
     {
       id: "4",
-      position_name: "Accounts Executive",
+      position_name: "Accounts Assistant",
     },
     {
       id: "5",
-      position_name: "Fleet Accountant",
+      position_name: "Accounts Executive",
     },
     {
       id: "6",
+      position_name: "Fleet Accountant",
+    },
+    {
+      id: "7",
       position_name: "Operations Executive",
     },
   ];
